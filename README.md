@@ -104,7 +104,9 @@ This project is licensed under the MIT License.
 Developed with ❤️ by Adarsh Singh
 
 🌐 LinkedIn: www.linkedin.com/in/adarshsingh1705 
+
 🌐 LeetCode: https://leetcode.com/u/AdarshSingh1705/
+
 📧 Email: as.adarshsingh13@gmail.com
 
 Explore the wonders of Uttarakhand with Global FootPrint!
