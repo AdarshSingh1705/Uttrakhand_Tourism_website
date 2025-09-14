@@ -1,0 +1,725 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global FootPrint</title>
+    <link rel="icon" href="./images/Fevicon-3.png" type="image/png" sizes="196x196">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./D-styles.css">
+
+
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="./Index.html" class="logo"><span>G</span>lobal <span>F</span>oot<span>P</span>rint</a>
+        <nav class="navbar">
+          <a href="./Index.html">Home</a>
+  
+    <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button class="dropbtn"><a href=" #destinations">Region</a></button>
+            <div class="dropdown-content">
+                <div class="dropdown-row">
+                    <a href="./Dehradun.html"><P>Dehradun</P></a>
+                    <a href="./Kedarnath.html"><P>Kedarnath</P></a>
+                    <a href="./Badrinath.html"><P>Badrinath</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Mussoorie.html"><P>Mussoorie</P></a>
+                    <a href="./Rishikesh.html"><P>Rishikesh</P></a>
+                    <a href="./Haridwar.html"><P>Haridwar</P></a>
+                </div>
+
+                <div class="dropdown-row">
+                  <a href="./Nainital.html"><P> Nainital </P></a>
+                  <a href="./Jim_corbett.html"><P>Jim_Corbett</P></a>
+                  <a href="./Rajaji_National_Park.html"><P>Rajaji N. P.</P></a>
+              </div>
+            </div>
+        </div>
+
+          <a href="./Index.html">Destinations</a>
+          <a href="#services">Services</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <li id="user-info" style="display:none;">
+            <a href="#" id="user-link" title="User Profile"><span id="user-name">User</span></a>
+        </li>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Search for destinations...." autocomplete="off">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+  </header>    
+ 
+  <!-- login form container -->
+    <div class="login-form-container" id="login-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form id="login-form">
+          <h3>Login</h3>
+          <p id="login-message" class="message"></p>
+          <input type="email" id="email" class="box" placeholder="Enter your email" required autocomplete="new-email" name="email">
+          <input type="password" id="password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="password">
+          <input type="submit" value="Login Now" class="btn">
+          <p>Don't have an account? <a href="#" id="show-signup">Register now</a></p>
+      </form>
+  </div>
+
+  <!-- signup form container -->
+  <div class="login-form-container" id="signup-container">
+      <i class="fas fa-times" id="form-close-signup"></i>
+      <form id="signup-form">
+          <h3>Sign Up</h3>
+          <p id="signup-message" class="message"></p>
+          <input type="text" id="signup-name" class="box" placeholder="Enter your name" required autocomplete="name" name="name">
+          <input type="email" id="signup-email" class="box" placeholder="Enter your email" required autocomplete="email" name="email">
+          <input type="password" id="signup-password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="signup-password">
+          <input type="password" id="confirm-password" class="box" placeholder="Confirm your password" required autocomplete="new-password" name="confirm-password">
+          <input type="button" value="Close" class="btn" id="close-signup">
+          <input type="submit" value="Sign Up Now" class="btn">
+          <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+      </form>
+  </div>
+  
+  <!-- header section end -->
+
+
+    <!-- Carousel of Destination Photos -->
+<div class="image-container">
+    <!-- <div class="content">
+        <h3>Welcome to Dehradun</h3>
+        <p>Explore Dehradun with us, adventure awaits</p>
+       </div> -->
+        <button class="scroll-left">←</button> <!-- Left Scroll Button -->
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="./images/pack-2.jpg" alt="Image 1">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Nainital/about+images/Images/nainital.webp" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="./images/gallery/g-11.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Nainital/about+images/Images/nainital5.webp" alt="Image 4">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Nainital/about+images/Images/nainital3.jpeg" alt="Image 3">
+            </div>
+        </div>
+        <button class="scroll-right">→</button> <!-- Right Scroll Button -->
+    </div>
+
+    <!-- Destination Name -->
+<h1 class="heading">
+        <span>n</span>
+        <span>a</span>
+        <span>i</span>
+        <span>n</span>
+        <span>i</span>
+        <span>t</span>
+        <span>a</span>
+        <span>l</span>
+    </h1>
+
+    <!-- About the Destination -->
+<section class="about-destination">
+
+    <div>
+        <br>
+        <h2>Nainital: The Lake District of India</h2>
+        <br>
+        <p>
+          Nestled around the pristine <strong>Naini Lake</strong>, Nainital is a charming hill station in Uttarakhand, known as the "<strong>Lake District of India</strong>." Surrounded by lush green hills and offering panoramic views of the Himalayas, Nainital attracts travelers with its serene beauty and pleasant weather. 
+        </p>
+        <br>
+        <p>
+          The town is famous for its colonial heritage, scenic lakes, and vibrant bazaars. Landmarks like the <u>Naini Devi Temple</u>, <u>Snow View Point</u>, and <u>Tiffin Top</u> reflect the town's cultural and natural richness. 
+        </p>
+        <br>
+        <p>
+          Visitors can enjoy boating on <strong>Naini Lake</strong>, exploring the <u>Mall Road</u>, and soaking in the tranquil atmosphere. Whether you're seeking a romantic getaway, a family vacation, or a solo adventure, Nainital has something for everyone.
+        </p>
+        <br>
+      </div>
+      
+</section>
+
+
+<!--Best Time to visit-->
+<section class="services">
+    <h1 class="heading">
+        <span>v</span>
+        <span>i</span>
+        <span>s</span>
+        <span>i</span>
+        <span>t</span>
+        <span>-</span>
+        <span>t</span>
+        <span>i</span>
+        <span>m</span>
+        <span>e</span>
+        <span>&</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>e</span>
+        <span>r</span>
+        <span>a</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br>
+<div class="box-container">
+
+    <div class="best-time-to-visit">
+        <br>
+        <h2>Best Time to Visit:</h2>
+        <ul>
+          <br>
+          <li><strong>Summers (March–June):</strong> Temperatures range between 11°C and 28°C, making it ideal for sightseeing, boating, and trekking. The weather is pleasant, and the blooming flowers add to the charm.</li>
+          <br>
+          <li><strong>Monsoons (July–September):</strong> The town experiences moderate to heavy rainfall, turning the surroundings lush green. Perfect for nature lovers, though landslides can affect travel.</li>
+          <br>
+          <li><strong>Winters (October–February):</strong> The temperature can drop to 0°C, with snowfall adding a magical touch. Ideal for honeymooners and those who enjoy winter sports.</li>
+        </ul>
+      </div>
+      
+
+
+    <!-- Itinerary section start-->
+    <div class="box" id="itinerary">
+        <h2>Itinerary</h2>
+       <br>
+       <h3>3-Day Itinerary</h3>
+       <ul>
+         <br>
+         <li><strong>Day 1:</strong> Start with boating on Naini Lake, followed by a visit to Naina Devi Temple. Head to Mall Road for shopping and enjoy local delicacies.</li>
+         <li><strong>Day 2:</strong> Visit Snow View Point for breathtaking Himalayan views. Explore the Eco Cave Gardens and relax at Tiffin Top for a sunset picnic.</li>
+         <li><strong>Day 3:</strong> Take a short trip to Bhimtal and Sattal for more lake adventures. End your trip with a visit to Kilbury Bird Sanctuary.</li>
+       </ul>
+       
+       <br>
+       <h3>4-Day Itinerary</h3>
+       <p>Includes 3-day itinerary</p>
+       <ul>
+         <li><strong>Day 4:</strong> Visit Governor’s House (Raj Bhavan) and St. John’s Church. Conclude your trip with local shopping at Bara Bazaar.</li>
+       </ul>
+       
+       <br>
+       <h3>5-Day Itinerary</h3>
+       <p>Includes 4-day itinerary</p>
+       <ul>
+         <li><strong>Day 5:</strong> Spend a day in Bhimtal, Sattal, and Naukuchiatal, enjoying kayaking and birdwatching. Discover Pangot’s serene landscapes. Take a trek to Land’s End or Dorothy’s Seat for captivating views. Wrap up with a relaxing evening at Bara Bazaar for souvenirs.</li>
+       </ul>
+    </div>
+</div>
+
+</section>
+
+<!-- Itinerary section end -->
+
+ <!-- Food & Cuisine Section -->
+  <br><br><br>
+ <h1 class="heading">
+    <span>F</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+    <span>&</span>
+    <span>c</span>
+    <span>u</span>
+    <span>s</span>
+    <span>i</span>
+    <span>n</span>
+    <span>e</span>
+</h1>
+
+ <section class="food-cuisine">
+
+    <div class="local-cuisine">
+
+        <h3>Local Cuisine</h3>
+       <br>
+        <img src="./Uttarakhand/Nainital/about+images/Images/churdkani.jpeg" alt="Local Cuisine" />
+       <br>
+        <p>Savor the flavors of Bal Mithai, a traditional sweet coated in sugar balls, Bhatt ki Churdkani, a delicious black bean curry, and Ras.</p>
+    </div>
+
+    <div class="street-food">
+        <h3>Street Food</h3>
+       <br> <img src="./Uttarakhand/Nainital/about+images/Images/bhutta.avif" alt="Street Food" />
+        <p>Relish momos, spicy aloo ke gutke (stir-fried potatoes), and roasted bhutta (corn on the cob).</p>
+    </div>
+
+    <div class="cafes-bakeries">
+        <h3>Cafes and Bakeries</h3>
+       <br> <img src="./Uttarakhand/Nainital/about+images/Images/sakleys.jpg" alt="Cafes and Bakeries" />
+        <p>Visit popular bakeries like Sakley’s and Pattie’s for their delectable cakes, pastries, and coffee</p>
+    </div>
+
+    <div class="restaurants">
+        <h3>Dining options</h3>
+       <br> <img src="./Uttarakhand/Nainital/about+images/Images/sherepunjab.jpg" alt="restaurants" />
+        <p>Restaurants like Sher-e-Punjab and Machan offer a mix of North Indian, Kumaoni, and international cuisines.</p>
+    </div>
+
+ </section>
+
+
+ <!-- Accommodation Options -->
+ <section class="accommodation-options">
+
+ <h1 class="heading">
+    <span>a</span>
+    <span>c</span>
+    <span>c</span>
+    <span>o</span>
+    <span>m</span>
+    <span>m</span>
+    <span>o</span>
+    <span>d</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+    <span>s</span>
+</h1>
+
+    <div class="accommodation-container">
+
+    <h3>Luxury Hotels</h3>
+    <p>: Naini Retreat and The Manu Maharani offer premium amenities, scenic views, and fine dining. Both hotels are known for their excellent hospitality and proximity to key attractions.
+    </p>
+    <br>
+    <h3>Mid-Range Hotels</h3>
+    <p>: Naini Retreat and The Manu Maharani offer premium amenities, scenic views, and fine dining. Both hotels are known for their excellent hospitality and proximity to key attractions.
+    </p>    
+
+    <br> <h3>Budget Options</h3>
+    <p>Ashok Hotel and Zostel Nainital cater to budget-conscious travelers with clean rooms, dorms, and a vibrant community vibe. Ideal for backpackers and solo travelers.
+    </p>
+   <br> <p>**Many accommodations offer easy access to major attractions, and online booking platforms allow you to choose the best options for your stay.</p>
+ </div>
+</section>
+
+ <!-- Nearby Attractions -->
+ <br><br><br>
+ <section class="Attractions">
+    <h1 class="heading">
+        <span>n</span>
+        <span>e</span>
+        <span>a</span>
+        <span>r</span>
+        <span>b</span>
+        <span>y</span>
+        <span>-</span>
+        <span>a</span>
+        <span>t</span>
+        <span>t</span>
+        <span>r</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+    </h1>
+    <br><br>
+
+    <div class="nearby-attractions">
+
+    <div class="attraction-card">
+        <img alt="Mussoorie" src="./Uttarakhand/Nainital/Nearby Attraction/naini lake/naini-lake-nainital-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg"/>
+        <div class="overlay">
+            <h2>Naini Lake</h2>
+
+            <p><strong>Description:</strong> The centerpiece of Nainital, this crescent-shaped lake offers a picturesque setting for boating, kayaking, and paddle boating.</p>
+            
+            <p><strong>Surroundings:</strong> Surrounded by seven hills, the lake is particularly mesmerizing during sunrise and sunset.</p>
+            
+            <p><strong>Activities:</strong> Evening strolls along its banks are a must for soaking in the serene beauty.</p>
+            
+        <a href="./Nainital.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <img alt="naina devi temple" src="./Uttarakhand/Nainital/Nearby Attraction/naina devi mandir/naina-devi-temple-nainital-tourism-entry-fee-timings-holidays-reviews-header.jpg"/>
+        <div class="overlay">
+            <h2>Naina Devi Temple</h2>
+
+            <p><strong>Location:</strong> Located on the northern shore of Naini Lake.</p>
+            
+            <p><strong>Dedication:</strong> This revered Hindu temple is dedicated to Goddess Naina Devi.</p>
+            
+            <p><strong>Surroundings:</strong> The peaceful surroundings and stunning views of the lake make it a popular spiritual and tourist spot.</p>
+            
+            <p><strong>Festivals:</strong> Festivals like Navratri add a vibrant charm to the temple.</p>
+            
+        <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+    <img alt="snow viewpoint" src="./Uttarakhand/Nainital/Nearby Attraction/snow view point/Snow View Point.jpg"/>
+        <div class="overlay">
+            <h2>Snow View Point</h2>
+
+            <p><strong>Access:</strong> Accessible by cable car or a short trek.</p>
+            
+            <p><strong>Views:</strong> This viewpoint offers breathtaking views of the snow-capped Himalayan peaks.</p>
+            
+            <p><strong>Telescopes:</strong> Telescopes at the site provide a closer look at the distant mountains, making it a paradise for photographers.</p>
+            
+            <a href="#">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <img alt="Rajaji National Park" src="./Uttarakhand/Nainital/Nearby Attraction/eco cave garden/eco-cave-gardens-nainital-indian-tourism-entry-fee-timings-holidays-reviews-header.jpg"/>
+        <div class="overlay">
+            <h2>Eco Cave Gardens</h2>
+
+            <p><strong>Attraction:</strong> This cluster of interconnected caves and hanging gardens is a unique attraction for families and adventure enthusiasts.</p>
+            
+            <p><strong>Themes:</strong> Each cave is themed around an animal, providing an educational and fun experience for children.</p>
+            
+            <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+    <img alt="Tiffin top" src="./Uttarakhand/Nainital/Nearby Attraction/tiffin top/tiffin-top-dorothy-s.jpg"/>
+        <div class="overlay">
+            <h2>Tiffin Top (Dorothy’s Seat)</h2>
+
+            <p><strong>Popularity:</strong> A popular picnic spot.</p>
+            
+            <p><strong>Views:</strong> Tiffin Top offers panoramic views of the town and surrounding hills.</p>
+            
+            <p><strong>Trek:</strong> The 4-km trek is moderate and rewarding, with ample opportunities for photography and quiet reflection amidst nature.</p>
+            
+        <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+    
+    <div class="attraction-card">
+        <img alt="adventure fair" src="./Uttarakhand/Dehradun/About+Images/paragliding.webp"/>
+            <div class="overlay">
+                <h2>Adventure Fairs</h2>
+
+                <p><strong>Timing:</strong> During summer.</p>
+                
+                <p><strong>Activities:</strong> The town organizes boat races, paragliding events, and trekking challenges.</p>
+                
+                <p><strong>Opportunities:</strong> These activities provide opportunities to experience the adventurous side of Nainital.</p>
+                      
+            <a href="link_to_attraction1.html">
+                <button class="btn">
+                    Explore
+                </button>
+              </a>
+            </div>
+        </div>
+
+ </div>
+</section>
+    <!-- How to Reach Section -->
+     <br><br><br>
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>w</span>
+        <span>-</span>
+        <span>t</span>
+        <span>o</span>
+        <span>-</span>
+        <span>r</span>
+        <span>e</span>
+        <span>a</span>
+        <span>c</span>
+        <span>h</span>
+    </h1>
+    <br>
+    <section class="how-to-reach">
+
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-air.png" alt="By Air" />
+            </div>
+            <div class="card-content">
+                <h3>By Air</h3>
+                <br>
+                <p>Pantnagar Airport is the nearest airport, located about 65 km from Nainital. Regular flights connect it to major cities.</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-train.jpg" alt="By Train" />
+            </div>
+            <div class="card-content">
+                <h3>By Train</h3>
+                <br>
+                <p>Kathgodam Railway Station is the nearest railhead, about 34 km from Nainital. It is well-connected to major cities, making train travel a convenient option.</p>
+                <br>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-road.jpg" alt="By Road" />
+            </div>
+            <div class="card-content">
+                <h3>By Road</h3>
+                <br>
+                <p>Nainital is accessible via a network of roads. Buses and taxis operate from nearby cities like Delhi, making road travel easy and affordable.</p>
+                <br>
+            </div>
+        </div>
+    </section>
+
+
+<!-- How to reach section ends-->
+
+<!-- Activity Section -->
+<br><br>
+    <h1 class="heading">
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>v</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br>
+    <section class="activity" id="activity-section">
+  
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Nainital/about+images/Images/Boating on Naini Lake.jpg" alt="Activity 1" />
+                    <br>
+                    <h3>Boating on Naini Lake</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Boating on Naini Lake</h3>
+                    <p>Choose between paddle boats, rowboats, or yachting to enjoy the tranquil waters of the lake. The experience is especially enchanting during sunrise or sunset, with the hills casting their reflection on the water.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Nainital/about+images/Images/trekking.jpeg" alt="Activity 2" />
+                    <br>
+                    <h3>Trekking</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Trekking</h3>
+                    <p>Trails like Snow View Point, Tiffin Top, and Land’s End offer varying levels of difficulty and stunning vistas. These treks are a great way to connect with nature and explore the lesser-known corners of Nainital.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Nainital/about+images/Images/Birdwatching at Kilbury and Pangot.jpg" alt="Activity 3" />
+                    <br>
+                    <h3>Birdwatching at Kilbury and Pangot</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Birdwatching at Kilbury and Pangot</h3>
+                    <p>Known for their rich biodiversity, these spots are home to over 580 species of birds. Pack your binoculars and a guidebook to make the most of this experience.</p>
+                </div>
+            </div>
+        </div>
+
+        <!-- <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Nainital/about+images/Images/Shopping.webp" alt="Activity 4" />
+                    <br>
+                    <h3>Shopping</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Shopping</h3>
+                    <p>From woolen shawls and scarves to handcrafted candles and wooden artifacts, the local markets offer a wide array of souvenirs. Bara Bazaar and Mall Road are the best spots to explore.</p>
+                </div>
+            </div>
+        </div> -->
+
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Nainital/about+images/Images/Adventure Activities.jpg" alt="Activity 5" />
+                    <br>
+                    <h3>Adventure Activities</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Adventure Activities</h3>
+                    <p>Engage in paragliding, zip-lining, and kayaking around Nainital for a thrilling outdoor experience. These activities are perfect for adrenaline junkies.</p>
+                </div>
+            </div>
+        </div>
+</section>
+<br><br>
+
+<!-- local markets -->
+<section >
+
+    <h1 class="heading">
+        <span>l</span>
+        <span>o</span>
+        <span>c</span>
+        <span>a</span>
+        <span>l</span>
+        <span>-</span>
+        <span>m</span>
+        <span>a</span>
+        <span>r</span>
+        <span>k</span>
+        <span>e</span>
+        <span>t</span>
+        <span>s</span>
+    </h1>
+    <div class="local-markets" id="local-markets">
+
+        <div class="local-market">
+            <h3>Mall Road</h3>
+            <p>A bustling hub for tourists, Mall Road is lined with shops selling woolen clothes, handcrafted candles, and souvenirs. Street food stalls and cafes make it a lively spot to explore.</p>
+        </div>
+        
+        <div class="local-market">
+            <h3>Bara Bazaar</h3>
+            <p>Famous for its fresh produce, jams, and pickles, Bara Bazaar is a must-visit for food enthusiasts. The local organic honey and spices are highly recommended.</p>
+        </div>
+        
+        <div class="local-market">
+            <h3>Tibetan Market</h3>
+            <p>This vibrant market offers a range of items, from clothing and accessories to traditional Tibetan artifacts. Bargaining is common here, so hone your skills!</p>
+        </div>
+        
+        <div class="local-market">
+            <h3>Specialty Items</h3>
+            <p>Look for intricately carved wooden items, hand-knit woolens, and aromatic herbal teas that reflect the region’s craftsmanship.</p>
+        </div>
+    
+    </div> 
+     
+    </section>
+
+<!-- footer section start -->
+<section class="footer">
+    <div class="box-container">
+      
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-angle-right"></i>home</a>
+        <a href="#services"><i class="fas fa-angle-right"></i>services</a>
+        <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a>
+        <a href="#destinations"><i class="fas fa-angle-right"></i>destinations</a>
+        <!-- <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a> -->
+      </div>
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="About.html"><i class="fas fa-angle-right"></i>about us</a>
+        <a href="#contact"><i class="fas fa-angle-right"></i>contact</a>
+        <a href="#review"><i class="fas fa-angle-right"></i>review</a>
+        <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="https://www.linkedin.com/in/adarsh-singh-25a616303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="https://www.facebook.com/share/15ZsxatotK/"><i class="fab fa-facebook-f"></i> facebook</a>
+        <a href="https://www.instagram.com/abu.obaida.00/"><i class="fab fa-instagram"></i> instagram</a>
+        <a href="https://x.com/ADNAN621636?t=OCuLwhVJ3PdWdR5l4-XBWQ&s=08"><i class="fab fa-twitter"></i> x</a>
+      </div>
+   
+    </div>
+   
+    <h1 class="credit">created by <span>Mr.Adarsh Singh</span> | all rights reserved</h1>
+   
+   </section> <!-- footer section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+ <script src="./D-scripts.js"></script>
+ <script src="./scripts.js"></script>
+
+ <script>
+    
+    const imageWrapper = document.querySelector('.image-wrapper');
+    const images = document.querySelectorAll('.image-item');
+    let currentIndex = 0; // Track the current image index
+
+function showImage(index) {
+    imageWrapper.style.transform = `translateX(-${index * 100}%)`; // Move to the current image
+}
+
+function scrollLeft() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1; // Loop back to the last image
+    showImage(currentIndex);
+}
+
+function scrollRight() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0; // Loop back to the first image
+    showImage(currentIndex);
+}
+
+const scrollLeftButton = document.querySelector('.scroll-left');
+const scrollRightButton = document.querySelector('.scroll-right');
+
+scrollLeftButton.addEventListener('click', scrollLeft);
+scrollRightButton.addEventListener('click', scrollRight);
+
+ </script>
+</body>
+</html>
+
+
+

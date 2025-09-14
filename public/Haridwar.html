@@ -1,0 +1,814 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh</title>
+    <link rel="icon" href="./images/Fevicon-3.png" type="image/png" sizes="196x196">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./D-styles.css">
+
+
+</head>
+<body>
+
+    <!-- header section start -->
+ 
+    <header>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="./Index.html" class="logo"><span>G</span>lobal <span>F</span>oot<span>P</span>rint</a>
+        <nav class="navbar">
+          <a href="./Index.html">Home</a>
+  
+    <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button class="dropbtn"><a href=" #destinations">Region</a></button>
+            <div class="dropdown-content">
+                <div class="dropdown-row">
+                    <a href="./Dehradun.html"><P>Dehradun</P></a>
+                    <a href="./Kedarnath.html"><P>Kedarnath</P></a>
+                    <a href="./Badrinath"><P>Badrinath</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Mussoorie.html"><P>Mussoorie</P></a>
+                    <a href="./Rishikesh.html"><P>Rishikesh</P></a>
+                    <a href="./Haridwar.html"><P>Haridwar</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Nainital.html"><P> Nainital </P></a>
+                    <a href="./Jim_corbett.html"><P>Jim_Corbett</P></a>
+                    <a href="./Rajaji_National_Park.html"><P>Rajaji N. P.</P></a>
+                </div>
+            </div>
+        </div>
+
+          <a href="./Index.html">Destinations</a>
+          <a href="#services">Services</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <li id="user-info" style="display:none;">
+            <a href="#" id="user-link" title="User Profile"><span id="user-name">User</span></a>
+        </li>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Search for destinations...." autocomplete="off">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+  </header>    
+ 
+  <!-- login form container -->
+    <div class="login-form-container" id="login-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form id="login-form">
+          <h3>Login</h3>
+          <p id="login-message" class="message"></p>
+          <input type="email" id="email" class="box" placeholder="Enter your email" required autocomplete="new-email" name="email">
+          <input type="password" id="password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="password">
+          <input type="submit" value="Login Now" class="btn">
+          <p>Don't have an account? <a href="#" id="show-signup">Register now</a></p>
+      </form>
+  </div>
+
+  <!-- signup form container -->
+  <div class="login-form-container" id="signup-container">
+      <i class="fas fa-times" id="form-close-signup"></i>
+      <form id="signup-form">
+          <h3>Sign Up</h3>
+          <p id="signup-message" class="message"></p>
+          <input type="text" id="signup-name" class="box" placeholder="Enter your name" required autocomplete="name" name="name">
+          <input type="email" id="signup-email" class="box" placeholder="Enter your email" required autocomplete="email" name="email">
+          <input type="password" id="signup-password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="signup-password">
+          <input type="password" id="confirm-password" class="box" placeholder="Confirm your password" required autocomplete="new-password" name="confirm-password">
+          <input type="button" value="Close" class="btn" id="close-signup">
+          <input type="submit" value="Sign Up Now" class="btn">
+          <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+      </form>
+  </div>
+  
+
+    <!-- Carousel of Destination Photos -->
+    <div class="image-container">
+        <button class="scroll-left">←</button> <!-- Left Scroll Button -->
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/haridwar 3.webp" alt="Image 1">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/haridwar 4.jpeg" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/haridwar 5.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/haridwar 2.jpg" alt="Image 4">
+            </div>
+        </div>
+        <button class="scroll-right">→</button> <!-- Right Scroll Button -->
+    </div>
+    
+    <!-- Destination Name -->
+    <h1 class="heading">
+        <span>h</span>
+        <span>a</span>
+        <span>r</span>
+        <span>i</span>
+        <span>d</span>
+        <span>w</span>
+        <span>a</span>
+        <span>r</span>
+    </h1>
+    
+    <!-- About the Destination -->
+<section class="about-destination">
+    <div>
+        <br>
+        <h2>Haridwar: The Gateway to Spiritual Bliss</h2>
+        <br>
+        <p>
+            <strong>Haridwar</strong>, one of the seven holiest places in Hinduism, is a sacred city located on the banks of the revered Ganges River in Uttarakhand. Known for its profound spiritual significance, Haridwar attracts millions of devotees and tourists annually. It serves as the gateway to the Char Dham Yatra and is celebrated for its ancient temples, ghats, and timeless rituals. The iconic Har Ki Pauri, where pilgrims perform sacred rites and take holy dips in the Ganges, stands as the city’s most revered site.
+        </p>
+        <br>
+        <p>
+            Haridwar is also famous for its vibrant cultural festivals and the enchanting Ganga Aarti, a daily ritual that mesmerizes visitors with its divine aura. The city’s spiritual energy, combined with its natural beauty, creates a serene and uplifting atmosphere. Whether you’re a spiritual seeker or a history enthusiast, Haridwar offers a unique blend of devotion, tradition, and tranquility.
+        </p>
+        <br>
+        <p>
+            A visit to Haridwar is not just a journey to a holy destination but an experience that rejuvenates the soul and connects you to the timeless essence of Indian spirituality. Its rich heritage and sacred charm continue to inspire and captivate travelers from across the globe.
+        </p>
+        <br>
+    </div>
+    </section>
+
+<!--Best Time to visit-->
+<section class="services">
+    <h1 class="heading">
+        <span>v</span>
+        <span>i</span>
+        <span>s</span>
+        <span>i</span>
+        <span>t</span>
+        <span>-</span>
+        <span>t</span>
+        <span>i</span>
+        <span>m</span>
+        <span>e</span>
+        <span>&</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>e</span>
+        <span>r</span>
+        <span>a</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+<br>
+<div class="box-container">
+
+    <div class="best-time-to-visit">
+        <br>
+        <h2>Best Time to Visit:</h2>
+        <ul style="font-size: 1.5rem;">
+            <p><strong>* Summers (March-June):</strong> Summer temperatures can soar up to 40°C, but the weather remains tolerable for sightseeing and exploring temples and ghats.</p>
+            <br>
+            <p><strong>* Monsoons (July-September):</strong> The monsoon season brings heavy rains, often leading to floods. While the lush greenery is beautiful, outdoor activities may be limited during this time.</p>
+            <br>
+            <p><strong>* Winters (October-February):</strong> Winters in Haridwar are mild, with temperatures ranging between 8°C and 20°C, making it the ideal time for pilgrimage and outdoor exploration.</p>
+        </ul>
+    </div>
+
+
+    <!-- Itinerary section start-->
+
+<div class="box" id="itinerary" >        
+        
+<h2>Itinerary</h2>
+    <br><br>   
+    <h3>3-Day Itinerary</h3>
+    <ul style="font-size: 1.5rem;">
+       <li><strong>Day 1:</strong> Visit Har Ki Pauri for the evening Ganga Aarti, explore local temples, and take a peaceful walk along the ghats.</li>
+       <li><strong>Day 2:</strong> Start with a visit to the Mansa Devi Temple and Chandi Devi Temple. Explore the local markets for souvenirs and traditional items.</li>
+       <li><strong>Day 3:</strong> Spend the morning at Rajaji National Park for a wildlife safari and relax in the evening at the serene Har Ki Pauri.</li>  
+    </ul>  
+    
+    <h3>4-Day Itinerary</h3>
+    <ul style="font-size: 1.5rem;">
+       <li><strong>Day 1:</strong> Arrive in Haridwar, visit Har Ki Pauri, and explore the ghats and nearby temples.</li>
+       <li><strong>Day 2:</strong> Take a cable car ride to Mansa Devi Temple and visit Chandi Devi Temple. Explore the markets for local handicrafts and souvenirs.</li>
+       <li><strong>Day 3:</strong> Visit Rajaji National Park for a wildlife safari, then spend the evening at Neel Dhara Pakshi Vihar for bird watching.</li>
+       <li><strong>Day 4:</strong> Visit the Patanjali Yogpeeth for a yoga session and explore local ashrams for spiritual experiences.</li>
+    </ul> 
+    
+    <h3>5-Day Itinerary</h3>
+    <ul style="font-size: 1.5rem;">  
+       <li><strong>Day 1:</strong> Visit Har Ki Pauri and experience the Ganga Aarti, followed by a walk along the ghats.</li>
+       <li><strong>Day 2:</strong> Visit Mansa Devi and Chandi Devi temples, then enjoy a peaceful evening along the river.</li>
+       <li><strong>Day 3:</strong> Spend a day at Rajaji National Park, exploring its natural beauty and wildlife.</li>
+       <li><strong>Day 4:</strong> Visit Patanjali Yogpeeth for a yoga and meditation session. Explore nearby ashrams and spiritual centers.</li>
+       <li><strong>Day 5:</strong> Take a trip to nearby Rishikesh for more spiritual and adventure activities.</li>
+    </ul>
+    </div>
+</div>
+
+</section>
+<!-- Itinerary section end -->
+
+ <!-- Food & Cuisine Section -->
+  
+ <br><br><br>
+<h1 class="heading">
+    <span>F</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+    <span>&</span>
+    <span>c</span>
+    <span>u</span>
+    <span>s</span>
+    <span>i</span>
+    <span>n</span>
+    <span>e</span>
+</h1>
+
+<section class="food-cuisine">
+
+    <div class="local-cuisine">
+        <h3>Local Cuisine</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/kachori.jpg" alt="Local Cuisine" />
+        <br>
+        <p>Must-try dishes include “Kachori,” “Aloo Poori,” and “Chana Masala.” Haridwar is also known for its “Puri-Sabzi” and “Lassi.”</p>
+    </div>
+    
+    <div class="street-food">
+        <h3>Street Food</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/chaat.jpg" alt="Street Food" />
+        <br>
+        <p>The streets of Haridwar are filled with vendors selling “Chaat,” “Samosas,” and other local street foods.</p>
+    </div>
+
+    <div class="cafes-bakeries">
+        <h3>Famous Eateries</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/bhandari sweets.avif" alt="Famous Eateries" />
+        <br>
+        <p>Popular spots like “Chotiwala Restaurant” and “Bhandari’s Sweets” offer local vegetarian delights, including snacks and sweets.</p>
+    </div>
+       
+    <div class="restaurants">
+        <h3>Dining Options</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/dining.avif" alt="Dining Options" />
+        <br>
+        <p>Haridwar has a variety of vegetarian restaurants, offering North Indian and regional delicacies, as well as some international options for tourists.</p>
+    </div>
+
+</section>
+
+ <!-- Accommodation Options -->
+ <section class="accommodation-options">
+
+ <h1 class="heading">
+    <span>a</span>
+    <span>c</span>
+    <span>c</span>
+    <span>o</span>
+    <span>m</span>
+    <span>m</span>
+    <span>o</span>
+    <span>d</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+    <span>s</span>
+</h1>
+
+    <div class="accommodation-container">
+
+        <h3>Luxury Hotels</h3>
+        <p>For those seeking comfort, hotels like “Haveli Hari Ganga” and “Ganga Lahari” offer riverside views, luxurious amenities, and a peaceful stay.</p>
+        
+        <br><h3>Mid-Range Hotels</h3>
+        <p>“Hotel Ganga View” and “Hotel Devnadi” offer comfortable rooms with proximity to Har Ki Pauri and other local attractions.</p>
+        
+        <br><h3>Budget Options</h3>
+        <p>: Budget travelers can opt for guesthouses and budget hotels like “Hotel Ganga Darshan” and “Zostel Haridwar” which provide simple accommodations at affordable rates.</p>   
+</div>
+</section>
+
+ <!-- Nearby Attractions -->
+ <br><br><br>
+ <section class="Attractions">
+    <h1 class="heading">
+        <span>n</span>
+        <span>e</span>
+        <span>a</span>
+        <span>r</span>
+        <span>b</span>
+        <span>y</span>
+        <span>-</span>
+        <span>a</span>
+        <span>t</span>
+        <span>t</span>
+        <span>r</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+    </h1>
+    <br><br>
+
+        <div class="nearby-attractions">
+
+            <div class="attraction-card">
+                <img alt="Mansa Devi Temple" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/Nearby Attraction/mansa devi.jpg"/>
+                <div class="overlay">
+                    <h2>Mansa Devi Temple</h2>
+                    <p><strong>Distance:</strong> 3 km from the nearest city.</p>
+                    <p><strong>Attractions:</strong> Perched atop the Bilwa Parvat, Mansa Devi Temple is dedicated to the goddess Mansa. Accessible via a cable car ride, this temple offers panoramic views of the city and the river. It is one of the panch tirths (five pilgrimage spots) in Haridwar, and devotees seek blessings for peace and prosperity.</p>
+                    <p><strong>Ideal For:</strong> This temple is perfect for those seeking spiritual blessings and scenic beauty.</p>
+                    <a href="link_to_attraction1.html">
+                        <button class="btn">
+                            Explore
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="attraction-card">
+                <img alt="Chandi Devi Temple" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/Nearby Attraction/chandi-devi-temple.jpg"/>
+                <div class="overlay">
+                    <h2>Chandi Devi Temple Overview</h2>
+                    <p><strong>Distance:</strong> 5 km from the nearest city.</p>
+                    <p><strong>Attractions:</strong> Located atop Neel Parvat, Chandi Devi Temple is accessible via a cable car ride. Devotees worship the goddess Chandi and enjoy breathtaking views of Haridwar and the Ganges River.</p>
+                    <p><strong>Ideal For:</strong> This temple is perfect for spiritual seekers and tourists alike.</p>
+                    <a href="link_to_attraction1.html">
+                        <button class="btn">
+                            Explore
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="attraction-card">
+                <img alt="Rajaji National Park" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/photography.jpg"/>
+                <div class="overlay">
+                    <h2>Rajaji National Park Overview</h2>
+                    <p><strong>Distance:</strong> 10 km from the nearest city.</p>
+                    <p><strong>Attractions:</strong> Known for its diverse wildlife and lush greenery, Rajaji National Park is home to elephants, tigers, leopards, and numerous bird species. A safari here offers a thrilling opportunity to witness these magnificent animals in their natural habitat.</p>
+                    <p><strong>Ideal For:</strong> This park is perfect for nature lovers and wildlife enthusiasts.</p>
+                    <a href="link_to_attraction1.html">
+                        <button class="btn">
+                            Explore
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="attraction-card">
+                <img alt="Patanjali Yogpeeth" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/Nearby Attraction/patanjali-yogpeeth.jpg"/>
+                <div class="overlay">
+                    <h2>Patanjali Yogpeeth Overview</h2>
+                    <p><strong>Distance:</strong> 15 km from the nearest city.</p>
+                    <p><strong>Attractions:</strong> Founded by Baba Ramdev, Patanjali Yogpeeth is a renowned yoga and wellness center. Visitors can attend yoga classes, Ayurvedic treatments, and workshops that promote a holistic lifestyle.</p>
+                    <p><strong>Ideal For:</strong> This center is perfect for those seeking relaxation and spiritual rejuvenation.</p>
+                    <a href="link_to_attraction1.html">
+                        <button class="btn">
+                            Explore
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="attraction-card">
+                <img alt="Neel Dhara Pakshi Vihar" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/birdwatching.jpg"/>
+                <div class="overlay">
+                    <h2>Neel Dhara Pakshi Vihar Overview</h2>
+                    <p><strong>Distance:</strong> 8 km from the nearest city.</p>
+                    <p><strong>Attractions:</strong> Located on the banks of the Ganges, this bird sanctuary is a hidden gem for bird watchers. The sanctuary is home to numerous species of migratory and resident birds, making it a perfect spot for nature lovers and photographers. Visitors can enjoy peaceful walks along the river and observe the birdlife in its natural setting.</p>
+                    <p><strong>Ideal For:</strong> This sanctuary is ideal for bird watchers and those seeking peaceful walks along the river.</p>
+                    <a href="link_to_attraction1.html">
+                        <button class="btn">
+                            Explore
+                        </button>
+                    </a>
+                </div>
+            </div>
+            
+            <div class="attraction-card">
+                <img alt="Har Ki Pauri" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/Nearby Attraction/har ki pauri.jpg"/>
+                <div class="overlay">
+                    <h2>Har Ki Pauri Overview</h2>
+                    <p><strong>Distance:</strong> 0 km from the nearest city.</p>
+                    <p><strong>Attractions:</strong> The most iconic landmark of Haridwar, Har Ki Pauri is a sacred ghat where thousands of pilgrims come to bathe in the Ganges. It is known for its evening Ganga Aarti, a mesmerizing ritual involving the lighting of lamps and the offering of prayers to the river. The spiritual and serene atmosphere makes this one of the most important pilgrimage destinations in India.</p>
+                    <p><strong>Ideal For:</strong> This ghat is perfect for those seeking a spiritual experience and a glimpse into India's rich cultural heritage.</p>
+                    <a href="link_to_attraction1.html">
+                        <button class="btn">
+                            Explore
+                        </button>
+                    </a>
+                </div>
+            </div>      
+
+ </div>
+</section>
+    <!-- How to Reach Section -->
+    <br><br><br>
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>w</span>
+        <span>-</span>
+        <span>t</span>
+        <span>o</span>
+        <span>-</span>
+        <span>r</span>
+        <span>e</span>
+        <span>a</span>
+        <span>c</span>
+        <span>h</span>
+    </h1>
+    <br>
+    <section class="how-to-reach">
+
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-air.png" alt="By Air" />
+            </div>
+            <div class="card-content">
+                <h3>By Air</h3>
+                <br>
+                <p>The nearest airport to Haridwar is Jolly Grant Airport in Dehradun, located 35 km away. Regular flights from Delhi and other major cities connect to the airport, and taxis are available for a smooth journey.</p>
+                <br>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-train.jpg" alt="By Train" />
+            </div>
+            <div class="card-content">
+                <h3>By Train</h3>
+                <br>
+                <p>Haridwar Railway Station is a major railway hub, well-connected to cities like Delhi, Mumbai, and Dehradun. Trains like Shatabdi Express and Jan Shatabdi run regularly.</p>
+                <br>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-road.jpg" alt="By Road" />
+            </div>
+            <div class="card-content" padding: 1rem>
+                <h3>By Road</h3>
+                <br>
+                <p>Haridwar is well-connected by road, with buses and taxis available from nearby cities like Delhi, Dehradun, and Rishikesh. The roads are well-maintained, making it easy to travel by car or bus.</p>
+                <br>
+            </div>
+        </div>
+</section>
+
+<!-- How to reach section ends-->
+
+<!-- Events Section -->
+<!-- <br>
+    <h1 class="heading">
+        <span>e</span>
+        <span>v</span>
+        <span>e</span>
+        <span>n</span>
+        <span>t</span>
+        <span>s</span>
+    </h1>
+    <br>
+    <section class="activity" id="activity-section">
+  
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./images/pack-5.jpg" alt="Kumbh Mela" />
+                <br> <h3>Kumbh Mela</h3>
+            </div>
+            <div class="card-back">
+                <h3>Kumbh Mela</h3>
+                <p>Haridwar is one of the four sites where the Kumbh Mela
+                    is held every 12 years, attracting millions of pilgrims
+                    for a holy dip in the Ganges. The festival is a grand
+                    celebration of faith, devotion, and spirituality.</p>
+                    <br>
+                </div>
+            </div>
+    </div>
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./images/pack-4.jpg" alt="Kumbh Mela" />
+                <br> <h3>Ganga Dussehra</h3>
+            </div>
+            <div class="card-back">
+                <h3>Ganga Dussehra:</h3>
+                <p>Celebrated in June, this festival marks the descent of the Ganges to earth and is an important event in Haridwar, involving a grand Ganga Aarti and rituals.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/boating.jpg" alt="Kumbh Mela" />
+                <br> <h3>Boating</h3>
+            </div>
+            <div class="card-back">
+                <h3>Boating:</h3>
+                <p>Take a peaceful boat ride on the Ganges at Har Ki Pauri or enjoy a boat trip around nearby temples and ghats.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/rajaji 4.jpeg" alt="wildlife safari" />
+                <br> <h3>wildlife safari </h3>
+            </div>
+            <div class="card-back">
+                <h3>Wildlife safari</h3>
+                <p>Explore Rajaji National Park and experience a thrilling safari to spot elephants, tigers, and other wildlife.</p>
+                <br>
+            </div>
+        </div>
+    </div>
+    
+ </section> -->
+
+<!-- Activity Section -->
+<br><br>
+    <h1 class="heading">
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>v</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br>
+    <section class="activity" id="activity-section">
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./images/pack-5.jpg" alt="Kumbh Mela" />
+                    <br> <h3>Kumbh Mela</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Kumbh Mela</h3>
+                    <p>Haridwar is one of the four sites where the Kumbh Mela
+                        is held every 12 years, attracting millions of pilgrims
+                        for a holy dip in the Ganges. The festival is a grand
+                        celebration of faith, devotion, and spirituality.</p>
+                        <br>
+                    </div>
+                </div>
+        </div>
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./images/pack-4.jpg" alt="Kumbh Mela" />
+                    <br> <h3>Ganga Dussehra</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Ganga Dussehra:</h3>
+                    <p>Celebrated in June, this festival marks the descent of the Ganges to earth and is an important event in Haridwar, involving a grand Ganga Aarti and rituals.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/boating.jpg" alt="Kumbh Mela" />
+                    <br> <h3>Boating</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Boating:</h3>
+                    <p>Take a peaceful boat ride on the Ganges at Har Ki Pauri or enjoy a boat trip around nearby temples and ghats.</p>
+                    <br>
+                </div>
+            </div>
+        </div>
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/rajaji 4.jpeg" alt="wildlife safari" />
+                    <br> <h3>wildlife safari </h3>
+                </div>
+                <div class="card-back">
+                    <h3>Wildlife safari</h3>
+                    <p>Explore Rajaji National Park and experience a thrilling safari to spot elephants, tigers, and other wildlife.</p>
+                    <br>
+                </div>
+            </div>
+        </div> 
+
+        <!-- <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Haridwar/About+Images/pilgrimage.jpeg" alt="Pilgrimage" />
+                    <br> <h3>Pilgrimage</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Pilgrimage:</h3>
+                    <p>Haridwar is a sacred city where pilgrims visit temples and ghats, especially Har Ki Pauri, to witness the mesmerizing Ganga Aarti. The spiritual ambiance and rituals offer a deeply enriching experience for devotees and seekers of peace.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Haridwar/About+Images/yoga_meditation.jpeg" alt="Yoga and Meditation" />
+                    <br> <h3>Yoga and Meditation</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Yoga and Meditation:</h3>
+                    <p>Haridwar is a hub for yoga and meditation, with numerous ashrams and retreats offering classes. Meditate by the Ganges to rejuvenate your mind and body in the serene and spiritual environment of the city.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Haridwar/About+Images/wildlife_safari.jpeg" alt="Wildlife Safari" />
+                    <br> <h3>Wildlife Safari</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Wildlife Safari:</h3>
+                    <p>Explore Rajaji National Park on a thrilling safari to spot elephants, tigers, and other wildlife. The park’s lush greenery and diverse fauna make it a perfect destination for nature and wildlife enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Haridwar/About+Images/boating.jpeg" alt="Boating" />
+                    <br> <h3>Boating</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Boating:</h3>
+                    <p>Enjoy a peaceful boat ride on the Ganges at Har Ki Pauri or explore nearby temples and ghats. The calm waters and scenic views make it a relaxing and memorable experience for visitors.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Haridwar/About+Images/shopping.jpeg" alt="Shopping" />
+                    <br> <h3>Shopping</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Shopping:</h3>
+                    <p>Haridwar’s vibrant markets offer religious items, handicrafts, and souvenirs. Explore the bustling bazaars to take home unique mementos that reflect the city’s rich culture and spiritual heritage.</p>
+                </div>
+            </div>
+        </div> -->
+
+</section>
+
+<br><br><br>
+
+<!-- local markets and shops -->
+<section >
+
+<h1 class="heading">
+    <span>l</span>
+    <span>o</span>
+    <span>c</span>
+    <span>a</span>
+    <span>l</span>
+    <span>-</span>
+    <span>m</span>
+    <span>a</span>
+    <span>r</span>
+    <span>k</span>
+    <span>e</span>
+    <span>t</span>
+    <span>s</span>
+</h1>
+<div class="local-markets" id="local-markets">
+
+    <div class="local-market">
+        <h3>Haridwar Market:</h3>
+        <p>Located near Har Ki Pauri, this bustling market is ideal for buying religious items like idols, beads, and prayer materials. It’s a hub for devotees and tourists seeking spiritual and cultural artifacts.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Maya Bazaar:</h3>
+        <p>Known for traditional clothing, jewelry, and handicrafts, Maya Bazaar is a must-visit for unique souvenirs. It’s a vibrant spot to explore and take home a piece of Haridwar’s rich heritage.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Chandi Chowk: </h3>
+        <p>Haridwar is famous for its variety of sweets, snacks, and traditional Ayurvedic products. From delicious jalebis and pedas to herbal remedies, the city offers a unique culinary and wellness experience that reflects its rich cultural and spiritual heritage.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Local Products</h3>
+        <p>Haridwar is famous for its variety of sweets, snacks, and traditional Ayurvedic products. From delicious jalebis and pedas to herbal remedies, the city offers a unique culinary and wellness experience that reflects its rich cultural and spiritual heritage.</p>
+    </div>
+
+</div>
+ 
+</section>
+
+<!-- footer section start -->
+<section class="footer">
+    <div class="box-container">
+      
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-angle-right"></i>home</a>
+        <a href="#services"><i class="fas fa-angle-right"></i>services</a>
+        <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a>
+        <a href="#destinations"><i class="fas fa-angle-right"></i>destinations</a>
+        <!-- <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a> -->
+      </div>
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="About.html"><i class="fas fa-angle-right"></i>about us</a>
+        <a href="#contact"><i class="fas fa-angle-right"></i>contact</a>
+        <a href="#review"><i class="fas fa-angle-right"></i>review</a>
+        <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="https://www.linkedin.com/in/adarsh-singh-25a616303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="https://www.facebook.com/share/15ZsxatotK/"><i class="fab fa-facebook-f"></i> facebook</a>
+        <a href="https://www.instagram.com/abu.obaida.00/"><i class="fab fa-instagram"></i> instagram</a>
+        <a href="https://x.com/ADNAN621636?t=OCuLwhVJ3PdWdR5l4-XBWQ&s=08"><i class="fab fa-twitter"></i> x</a>
+      </div>
+   
+    </div>
+   
+    <h1 class="credit">created by <span>Mr.Adarsh Singh</span> | all rights reserved</h1>
+   
+</section>
+   <!-- footer section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./D-scripts.js"></script>
+    <script src="./scripts.js"></script>
+
+
+    
+ <script>
+    
+    const imageWrapper = document.querySelector('.image-wrapper');
+    const images = document.querySelectorAll('.image-item');
+    let currentIndex = 0; // Track the current image index
+
+function showImage(index) {
+    imageWrapper.style.transform = `translateX(-${index * 100}%)`; // Move to the current image
+}
+
+function scrollLeft() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1; // Loop back to the last image
+    showImage(currentIndex);
+}
+
+function scrollRight() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0; // Loop back to the first image
+    showImage(currentIndex);
+}
+
+const scrollLeftButton = document.querySelector('.scroll-left');
+const scrollRightButton = document.querySelector('.scroll-right');
+
+scrollLeftButton.addEventListener('click', scrollLeft);
+scrollRightButton.addEventListener('click', scrollRight);
+
+ </script>
+</body>
+</html>

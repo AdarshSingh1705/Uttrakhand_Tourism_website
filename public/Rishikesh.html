@@ -1,0 +1,738 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rishikesh</title>
+    <link rel="icon" href="./images/Fevicon-3.png" type="image/png" sizes="196x196">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./D-styles.css">
+
+
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="./Index.html" class="logo"><span>G</span>lobal <span>F</span>oot<span>P</span>rint</a>
+        <nav class="navbar">
+          <a href="public/Index.html">Home</a>
+  
+    <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button class="dropbtn"><a href=" #destinations">Region</a></button>
+            <div class="dropdown-content">
+                <div class="dropdown-row">
+                    <a href="./Dehradun.html"><P>Dehradun</P></a>
+                    <a href="./Kedarnath.html"><P>Kedarnath</P></a>
+                    <a href="./Badrinath.html"><P>Badrinath</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Mussoorie.html"><P>Mussoorie</P></a>
+                    <a href="./Rishikesh.html"><P>Rishikesh</P></a>
+                    <a href="./Haridwar.html"><P>Haridwar</P></a>
+                </div>
+
+                <div class="dropdown-row">
+                  <a href="./Nainital.html"><P> Nainital </P></a>
+                  <a href="./Jim_corbett.html"><P>Jim_Corbett</P></a>
+                  <a href="./Rajaji_National_Park.html"><P>Rajaji N. P.</P></a>
+              </div>
+            </div>
+        </div>
+
+          <a href="./Index.html">Destinations</a>
+          <a href="#services">Services</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <li id="user-info" style="display:none;">
+            <a href="#" id="user-link" title="User Profile"><span id="user-name">User</span></a>
+        </li>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Search for destinations...." autocomplete="off">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+  </header>    
+ 
+  <!-- login form container -->
+    <div class="login-form-container" id="login-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form id="login-form">
+          <h3>Login</h3>
+          <p id="login-message" class="message"></p>
+          <input type="email" id="email" class="box" placeholder="Enter your email" required autocomplete="new-email" name="email">
+          <input type="password" id="password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="password">
+          <input type="submit" value="Login Now" class="btn">
+          <p>Don't have an account? <a href="#" id="show-signup">Register now</a></p>
+      </form>
+  </div>
+
+  <!-- signup form container -->
+  <div class="login-form-container" id="signup-container">
+      <i class="fas fa-times" id="form-close-signup"></i>
+      <form id="signup-form">
+          <h3>Sign Up</h3>
+          <p id="signup-message" class="message"></p>
+          <input type="text" id="signup-name" class="box" placeholder="Enter your name" required autocomplete="name" name="name">
+          <input type="email" id="signup-email" class="box" placeholder="Enter your email" required autocomplete="email" name="email">
+          <input type="password" id="signup-password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="signup-password">
+          <input type="password" id="confirm-password" class="box" placeholder="Confirm your password" required autocomplete="new-password" name="confirm-password">
+          <input type="button" value="Close" class="btn" id="close-signup">
+          <input type="submit" value="Sign Up Now" class="btn">
+          <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+      </form>
+  </div>
+  
+  <!-- header section end -->
+
+    <!-- Carousel of Destination Photos -->
+    <div class="image-container">
+        <button class="scroll-left">←</button> <!-- Left Scroll Button -->
+        <div class="image-wrapper">
+            <div class="image-item">
+                <video src="./images/vid-1.mp4" id="video-slider" loop autoplay muted></video>  
+           </div>
+            <div class="image-item">
+                <img src="./images/pack-3.jpg" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/rishikesh1.jpg" alt="Image 3">
+            </div>
+            <!-- <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/rishikesh.png" alt="Image 4">
+            </div> -->
+            <div class="image-item">
+                <img src="./images/gallery/g-3.jpg" alt="Image 4">
+            </div>
+        </div>
+        <button class="scroll-right">→</button> <!-- Right Scroll Button -->
+    </div>
+    
+    <!-- Destination Name -->
+    <h1 class="heading">
+        <span>r</span>
+        <span>i</span>
+        <span>s</span>
+        <span>h</span>
+        <span>i</span>
+        <span>k</span>
+        <span>e</span>
+        <span>s</span>
+        <span>h</span>
+    </h1>
+    
+    <!-- About the Destination -->
+<section class="about-destination">
+        <div>
+            <br>
+            <h2 style="color: darkred;">Rishikesh: The Yoga Capital of the World</h2>
+            <br>
+            <p>
+                <strong>Rishikesh</strong>, known as the "Yoga Capital of the World," is a spiritual and adventure hub nestled along the banks of the sacred Ganges River in Uttarakhand. This small town, surrounded by lush green hills, is renowned for its ashrams, yoga retreats, and vibrant spiritual atmosphere. It attracts thousands of yoga enthusiasts, spiritual seekers, and adventure lovers each year. Rishikesh is also the gateway to the Char Dham Yatra, making it a significant pilgrimage destination.
+            </p>
+            <br>
+            <p>
+                The city’s iconic landmarks include the Lakshman Jhula, Ram Jhula, and the Triveni Ghat, where daily Ganga Aarti ceremonies draw large crowds. Rishikesh blends the serenity of nature with spiritual and adventure activities, making it a unique destination for all types of travelers. Whether you're seeking inner peace through yoga and meditation or thrilling experiences like white-water rafting and trekking, Rishikesh offers something for everyone.
+            </p>
+            <br>
+            <p>
+                Its tranquil environment, coupled with the spiritual energy of the Ganges, makes Rishikesh a must-visit destination for those looking to rejuvenate their mind, body, and soul. The town’s rich cultural heritage and natural beauty continue to captivate visitors from around the globe.
+            </p>
+            <br>
+        </div>
+    </section>
+
+<!--Best Time to visit-->
+<section class="services">
+    <h1 class="heading">
+        <span>v</span>
+        <span>i</span>
+        <span>s</span>
+        <span>i</span>
+        <span>t</span>
+        <span>-</span>
+        <span>t</span>
+        <span>i</span>
+        <span>m</span>
+        <span>e</span>
+        <span>&</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>e</span>
+        <span>r</span>
+        <span>a</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+<br>
+<div class="box-container">
+
+    <div class="best-time-to-visit">
+        <br>
+        <h2>Best Time to Visit:</h2>
+        <ul style="font-size: 1.5rem;">
+            <p><strong>* Summers (March-June):</strong> The weather during summers is hot but pleasant with temperatures ranging between 25°C to 40°C. This is the best time for adventure sports like river rafting, trekking, and camping.</p>
+            <br>
+            <p><strong>* Monsoons (July-September):</strong> The monsoon season brings heavy rainfall, leading to swollen rivers and landslides in some areas. While the lush greenery becomes enchanting, outdoor activities are best avoided during this time.</p>
+            <br>
+            <p><strong>* Winters (October-February):</strong> Winters are cool and comfortable, with temperatures dropping to around 8°C. This is the best time to visit for those looking for a spiritual retreat, yoga sessions, and peaceful riverbank walks.</p>
+        </ul>
+    </div>
+
+
+    <!-- Itinerary section start-->
+
+<div class="box" id="itinerary" >        
+        
+<h2>Itinerary</h2>
+    <br><br>   
+    <h3>3-Day Itinerary</h3>
+    <ul style="font-size: 1.5rem;">
+       <li><strong>Day 1:</strong> Arrive in Rishikesh, visit Triveni Ghat, attend the evening Ganga Aarti.</li>
+       <li><strong>Day 2:</strong> Morning yoga session, visit Beatles Ashram, walk across Lakshman Jhula.</li>
+       <li><strong>Day 3:</strong> River rafting on the Ganges, visit Neelkanth Mahadev Temple.</li>  
+    </ul>  
+       <h3>4-Day Itinerary</h3>
+    <ul style="font-size: 1.5rem;">
+       <li><strong>Day 1:</strong> Arrive, visit Triveni Ghat, and enjoy the Ganga Aarti.</li>
+       <li><strong>Day 2:</strong> Morning yoga class, visit Beatles Ashram, and explore Ram Jhula and Lakshman Jhula.</li>
+       <li><strong>Day 3:</strong> River rafting adventure, visit Neelkanth Mahadev Temple.</li>
+       <li><strong>Day 4:</strong> Trekking in Rajaji National Park or explore nearby villages.</li>
+    </ul> 
+       <h3>5-Day Itinerary</h3>
+    <ul style="font-size: 1.5rem;">  
+       <li><strong>Day 1:</strong> Arrive, visit Triveni Ghat, and attend the Ganga Aarti ceremony.</li>
+       <li><strong>Day 2:</strong> Morning yoga class, visit Beatles Ashram, and walk on Lakshman Jhula.</li>
+       <li><strong>Day 3:</strong> River rafting and explore nearby waterfalls.</li>
+       <li><strong>Day 4:</strong> Visit Neelkanth Mahadev Temple and trek in Rajaji National Park.</li>
+       <li><strong>Day 5:</strong> Spiritual retreat at an ashram or attend a meditation session.</li>
+    </ul>
+    </div>
+</div>
+
+</section>
+<!-- Itinerary section end -->
+
+ <!-- Food & Cuisine Section -->
+  
+ <br><br><br>
+<h1 class="heading">
+    <span>F</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+    <span>&</span>
+    <span>r</span>
+    <span>e</span>
+    <span>s</span>
+    <span>t</span>
+    <span>u</span>
+    <span>r</span>
+    <span>a</span>
+    <span>n</span>
+    <span>t</span>
+</h1>
+
+<section class="food-cuisine">
+
+    <div class="local-cuisine">
+        <h3>Local Cuisine</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/chole bhature.jpg" alt="Local Cuisine" />
+        <br>
+        <p>Try local specialties like Aloo ke Parathe, Chole Bhature, and Mooli Paratha, which are staples in the region.</p>
+    </div>
+    
+    <div class="street-food">
+        <h3>Street Food</h3>
+        <br>
+        <img src="./Uttarakhand//Dehradun/Nearby Attractions/2. Rishikesh/About+Images/samosa.jpg" alt="Street Food" />
+        <br>
+        <p>Savor vegetarian street food like Pani Puri, Chaat, and Samosas, widely available in the local markets.</p>
+    </div>
+    
+    <div class="cafes-bakeries">
+        <h3>Cafes and Bakeries</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/cafe de goa.avif" alt="Cafes and Bakeries" />
+        <br>
+        <p>Visit popular cafes like Café de Goa and Chotiwala Restaurant for a mix of local and international cuisine.</p>
+    </div>
+    
+    <div class="restaurants">
+        <h3>Restaurants</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/restaurant.webp" alt="Restaurants" />
+        <br>
+        <p>Enjoy organic, vegetarian, and healthy meals at various cafes and restaurants, perfect for health-conscious travelers.</p>
+    </div>
+
+</section>
+
+ <!-- Accommodation Options -->
+ <section class="accommodation-options">
+
+ <h1 class="heading">
+    <span>a</span>
+    <span>c</span>
+    <span>c</span>
+    <span>o</span>
+    <span>m</span>
+    <span>m</span>
+    <span>o</span>
+    <span>d</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+    <span>s</span>
+</h1>
+
+    <div class="accommodation-container">
+
+        <h3>Luxury Hotels</h3>
+        <p>Rishikesh offers luxurious stays at properties like “Ananda in the Himalayas” and “The Ganga Kinare,” which provide top-notch amenities, stunning river views, and wellness services like yoga and meditation.</p>
+        
+        <br><h3>Mid-Range Hotels</h3>
+        <p>For more affordable stays, “Bhandari Swiss Cottage” and “Hotel Ganga View” offer comfortable rooms with a good range of facilities, ideal for both families and couples.</p>
+        
+        <br><h3>Budget Options</h3>
+        <p>Budget-friendly accommodations like “Zostel Rishikesh” and “Shree Hari Hotel” provide clean, simple rooms with affordable prices, perfect for backpackers and solo travelers.</p>   
+    </div>
+</section>
+
+ <!-- Nearby Attractions -->
+ <br><br><br>
+ <section class="Attractions">
+    <h1 class="heading">
+        <span>n</span>
+        <span>e</span>
+        <span>a</span>
+        <span>r</span>
+        <span>b</span>
+        <span>y</span>
+        <span>-</span>
+        <span>a</span>
+        <span>t</span>
+        <span>t</span>
+        <span>r</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+    </h1>
+    <br><br>
+
+        <div class="nearby-attractions">
+
+            <div class="attraction-card">
+                <img alt="Lakshman Jhula" src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/laxman-jhula-rishikesh.jpg"/>
+                <div class="overlay">
+                        <h2>Lakshman Jhula Overview</h2>
+        
+                        <p><strong>Distance:</strong> 2 km from the nearest city.</p>
+        
+                        <p><strong>Attractions:</strong> This iron suspension bridge over the Ganges is one of Rishikesh’s most iconic landmarks. It connects the two banks of the river and offers stunning views of the surrounding hills and the Ganges.</p>
+        
+                        <p><strong>Ideal For:</strong> This bridge is perfect for those seeking a blend of natural beauty and spiritual charm.</p>
+                <a href="link_to_attraction1.html">
+                    <button class="btn">
+                        Explore
+                    </button>
+                  </a>
+                </div>
+            </div>
+        
+            <div class="attraction-card">
+                <img alt="Triveni Ghat" src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/yoga.jpg"/>
+                <div class="overlay">
+                    <h2>Triveni Ghat Overview</h2>
+        
+                    <p><strong>Distance:</strong> 1 km from the nearest city.</p>
+                    
+                    <p><strong>Attractions:</strong> A sacred bathing ghat, Triveni Ghat is known for its evening Ganga Aarti, where pilgrims and visitors gather to witness the ritual of lighting lamps and offering prayers to the river goddess.</p>
+                    
+                    <p><strong>Ideal For:</strong> This ghat is perfect for those seeking a spiritual experience.</p>
+                
+                <a href="link_to_attraction1.html">
+                    <button class="btn">
+                        Explore
+                    </button>
+                  </a>
+                </div>
+            </div>
+        
+            <div class="attraction-card">
+            <img alt="Beatles Ashram" src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/beatlas ashram.jpg"/>
+                <div class="overlay">
+                    <h2>Beatles Ashram Overview</h2>
+        
+                    <p><strong>Distance:</strong> 4 km from the nearest city.</p>
+                    
+                    <p><strong>Attractions:</strong> This ashram, also known as the Maharishi Mahesh Yogi Ashram, is famous for being the place where The Beatles visited in the late 1960s. It’s a peaceful spot for reflection and exploration of street art and history.</p>
+                    
+                    <p><strong>Ideal For:</strong> This ashram is perfect for those seeking a blend of history and spirituality.</p>
+                <a href="link_to_attraction1.html">
+                    <button class="btn">
+                        Explore
+                    </button>
+                  </a>
+                </div>
+            </div>
+        
+            <div class="attraction-card">
+                <img alt="Neelkanth Mahadev Temple" src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/neelkanth temple.avif"/>
+                <div class="overlay">
+                    <h2>Neelkanth Mahadev Temple Overview</h2>
+        
+                    <p><strong>Distance:</strong> 20 km from the nearest city.</p>
+                    
+                    <p><strong>Attractions:</strong> Situated amidst dense forest and hills, this ancient temple dedicated to Lord Shiva offers a serene and spiritual experience.</p>
+                    
+                    <p><strong>Ideal For:</strong> This temple is perfect for those seeking a spiritual experience.</p>        
+                <a href="link_to_attraction1.html">
+                    <button class="btn">
+                        Explore
+                    </button>
+                  </a>
+                </div>
+            </div>
+        
+            <div class="attraction-card">
+                <img alt="Rajaji National Park" src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/jungle safari.webp"/>
+                <div class="overlay">
+                    <h2>Rajaji National Park Overview</h2>
+        
+                    <p><strong>Distance:</strong> 15 km from the nearest city.</p>
+                    
+                    <p><strong>Attractions:</strong> A haven for wildlife enthusiasts, this park offers guided safaris where visitors can spot elephants, tigers, leopards, and a variety of bird species.</p>
+                    
+                    <p><strong>Ideal For:</strong> This park is perfect for those seeking a wildlife experience.</p>
+                
+                <a href="link_to_attraction1.html">
+                    <button class="btn">
+                        Explore
+                    </button>
+                  </a>
+                </div>
+            </div>
+        
+
+ </div>
+</section>
+    <!-- How to Reach Section -->
+    <br><br><br>
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>w</span>
+        <span>-</span>
+        <span>t</span>
+        <span>o</span>
+        <span>-</span>
+        <span>r</span>
+        <span>e</span>
+        <span>a</span>
+        <span>c</span>
+        <span>h</span>
+    </h1>
+    <br>
+    <section class="how-to-reach">
+
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-air.png" alt="By Air" />
+            </div>
+            <div class="card-content">
+                <h3>By Air</h3>
+                <br>
+                <p>The nearest airport to Rishikesh is Jolly Grant Airport in Dehradun, located about 20 km away. From there, you can take a taxi to reach Rishikesh.</p>
+                <br>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-train.jpg" alt="By Train" />
+            </div>
+            <div class="card-content">
+                <h3>By Train</h3>
+                <br>
+                <p>Rishikesh Railway Station connects to major cities, including Delhi and Haridwar. Trains are frequent and offer a convenient travel option.</p>
+                <br>
+            </div>
+        </div>
+        
+        <div class="card">
+            <div class="card-image">
+                <img src="./images/gallery/by-road.jpg" alt="By Road" />
+            </div>
+            <div class="card-content" padding: 1rem>
+                <h3>By Road</h3>
+                <br>
+                <p>Rishikesh is well-connected by road to Delhi, Haridwar, and other nearby cities. Public buses, private taxis, and rental cars are commonly used to reach Rishikesh.</p>
+                <br>
+            </div>
+        </div>
+</section>
+
+<!-- How to reach section ends-->
+
+<!-- Activity Section -->
+<br><br>
+    <h1 class="heading">
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>v</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br>
+    <section class="activity" id="activity-section">
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/yoga.jpg" alt="Yoga and Meditation" />
+                    <br> <h3>Yoga and Meditation</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Yoga and Meditation:</h3>
+                    <p>Rishikesh is the perfect place to practice yoga and meditation, with numerous ashrams and retreats offering classes for all levels. Experience the tranquility and spiritual energy of the city.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/river rafting.jpg" alt="River Rafting" />
+                    <br> <h3>River Rafting</h3>
+                </div>
+                <div class="card-back">
+                    <h3>River Rafting:</h3>
+                    <p>Rishikesh is renowned for its thrilling white-water rafting on the Ganges, suitable for beginners and experienced adventurers. Experience the rush of navigating the rapids and enjoy the scenic beauty of the river.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/trekking.webp" alt="Trekking" />
+                    <br> <h3>Trekking</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Trekking:</h3>
+                    <p>Explore various trekking routes around Rishikesh, including the Neelkanth Mahadev Temple trek and the Rajaji National Park trails. Experience the natural beauty of the Himalayas and enjoy the scenic views.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/camping.webp" alt="Camping" />
+                    <br> <h3>Camping</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Camping:</h3>
+                    <p>Set up camp along the Ganges for a tranquil escape and enjoy bonfires and riverside activities. Experience the peaceful atmosphere of the riverbank and enjoy the scenic beauty of the surrounding hills.</p>
+                </div>
+            </div>
+        </div>
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/jungle safari.jpg" alt="Wildlife Safari" />
+                    <br> <h3>Wildlife Safari</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Wildlife Safari:</h3>
+                    <p>Visit Rajaji National Park for guided safaris, where you can spot a variety of wildlife, including elephants and leopards. Experience the thrill of wildlife spotting and enjoy the scenic beauty of the park.</p>
+                </div>
+            </div>
+        </div>
+            
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/ganga aarti.jpg" alt="Ganga Aarti at Triveni Ghat" />
+                <br> <h3>Ganga Aarti at Triveni Ghat</h3>
+            </div>
+            <div class="card-back">
+                <h3>Ganga Aarti at Triveni Ghat:</h3>
+                <p>The evening Ganga Aarti is a major highlight, attracting both pilgrims and tourists. Experience the spiritual fervor and cultural performances.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/2. Rishikesh/About+Images/river rafting.jpg" alt="Adventure Sports" />
+                <br> <h3>Adventure Sports</h3>
+            </div>
+            <div class="card-back">
+                <h3>Adventure Sports:</h3>
+                <p>Participate in the Rishikesh International Rafting Festival or enjoy activities like bungee jumping and trekking. Experience the thrill of adventure sports in Rishikesh.</p>
+            </div>
+        </div>
+    </div>
+    
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                <img src="./images/pack-5.jpg" alt="Festivals" />
+                <br> <h3>Festivals</h3>
+            </div>
+            <div class="card-back">
+                <h3>Festivals:</h3>
+                <p>Rishikesh celebrates major Hindu festivals like Diwali, Makar Sankranti, and Holi with spiritual fervor and cultural performances. Experience the vibrant culture of Rishikesh.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<br><br><br>
+
+<!-- local markets and shops -->
+<section >
+
+<h1 class="heading">
+    <span>l</span>
+    <span>o</span>
+    <span>c</span>
+    <span>a</span>
+    <span>l</span>
+    <span>-</span>
+    <span>m</span>
+    <span>a</span>
+    <span>r</span>
+    <span>k</span>
+    <span>e</span>
+    <span>t</span>
+    <span>s</span>
+</h1>
+<div class="local-markets" id="local-markets">
+
+    <div class="local-market">
+        <h3>Lakshman Jhula Market</h3>
+        <p>The bustling market near Lakshman Jhula offers a variety of spiritual items, including beads, prayer flags, and incense. It's a great place to find unique souvenirs and gifts.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Rishikesh Main Market</h3>
+        <p>Ideal for shopping for Ayurvedic products, books, clothing, and souvenirs. You can find a wide range of items, from traditional Indian clothing to spiritual books and Ayurvedic medicines.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Tibetan Market</h3>
+        <p>A great place for woolen goods, handicrafts, and unique Tibetan souvenirs. You can find beautiful handmade items, such as woolen shawls, hats, and scarves, as well as traditional Tibetan handicrafts.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Local Products</h3>
+        <p>Don’t miss buying organic teas, yoga accessories, and handcrafted jewelry available in Rishikesh’s local shops. These unique products make great souvenirs and gifts, and support the local community.</p>
+    </div>
+
+</div>
+ 
+</section>
+
+<!-- footer section start -->
+<section class="footer">
+    <div class="box-container">
+      
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-angle-right"></i>home</a>
+        <a href="#services"><i class="fas fa-angle-right"></i>services</a>
+        <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a>
+        <a href="#destinations"><i class="fas fa-angle-right"></i>destinations</a>
+        <!-- <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a> -->
+      </div>
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="About.html"><i class="fas fa-angle-right"></i>about us</a>
+        <a href="#contact"><i class="fas fa-angle-right"></i>contact</a>
+        <a href="#review"><i class="fas fa-angle-right"></i>review</a>
+        <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="https://www.linkedin.com/in/adarsh-singh-25a616303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="https://www.facebook.com/share/15ZsxatotK/"><i class="fab fa-facebook-f"></i> facebook</a>
+        <a href="https://www.instagram.com/abu.obaida.00/"><i class="fab fa-instagram"></i> instagram</a>
+        <a href="https://x.com/ADNAN621636?t=OCuLwhVJ3PdWdR5l4-XBWQ&s=08"><i class="fab fa-twitter"></i> x</a>
+      </div>
+   
+    </div>
+   
+    <h1 class="credit">created by <span>Mr.Adarsh Singh</span> | all rights reserved</h1>
+   
+   </section>
+   <!-- footer section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./D-scripts.js"></script>
+    <script src="./scripts.js"></script>
+
+
+    
+ <script>
+    
+    const imageWrapper = document.querySelector('.image-wrapper');
+    const images = document.querySelectorAll('.image-item');
+    let currentIndex = 0; // Track the current image index
+
+function showImage(index) {
+    imageWrapper.style.transform = `translateX(-${index * 100}%)`; // Move to the current image
+}
+
+function scrollLeft() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1; // Loop back to the last image
+    showImage(currentIndex);
+}
+
+function scrollRight() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0; // Loop back to the first image
+    showImage(currentIndex);
+}
+
+const scrollLeftButton = document.querySelector('.scroll-left');
+const scrollRightButton = document.querySelector('.scroll-right');
+
+scrollLeftButton.addEventListener('click', scrollLeft);
+scrollRightButton.addEventListener('click', scrollRight);
+
+ </script>
+</body>
+</html>
+
+
+

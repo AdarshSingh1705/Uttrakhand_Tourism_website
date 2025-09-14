@@ -1,0 +1,42 @@
+# Node modules
+node_modules/
+
+# Environment variables
+.env
+
+# OS generated files
+.DS_Store
+Thumbs.db
+
+# Log files
+*.log
+
+# Build output
+/dist/
+/build/
+
+# IDE and editor folders
+.vscode/
+.idea/
+
+# Misc
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# Office documents
+public/Destinations/*.docx
+public/Uttarakhand/**/*.docx
+
+# Video files
+public/images/*.mp4
+
+# Temporary files
+*.tmp
+*.swp
+
+# Images and other large assets (if you want to keep them private)
+# public/images/
+# public/Uttarakhand/**/Images/
+
+# You can add more patterns as needed for sensitive/private files

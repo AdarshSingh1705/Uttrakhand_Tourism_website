@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Footprints</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #eaeaea;
+            color: #333;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+            border-bottom: 5px solid #333;
+        }
+        main {
+            display: flex;
+            max-width: 1200px;
+            margin: 20px auto;
+            padding: 20px;
+            background-color: white;
+            border-radius: 10px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .content {
+            flex: 2;
+            padding: 20px;
+        }
+        .image-box {
+            flex: 1;
+            width: 100%;
+            height: 350px;
+            margin-top: 120px;
+            margin-right: 20px;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+        }
+        .image-box img {
+        
+            width: 100%;
+            height: 100%;
+        }
+        .image-box img:hover{
+            transform: scale(1.1);
+            transition: all 0.3s ease;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        p {
+            margin: 15px 0;
+            padding: 15px;
+            background-color: #f9f9f9;
+            border: 1px solid #ddd;
+            border-radius: 8px;
+            transition: background-color 0.3s;
+        }
+        p:hover {
+            background-color: #f1f1f1;
+        }
+        footer {
+            text-align: center;
+            padding: 10px 0;
+            background-color: #e9a21e;
+            color: white;
+            position: relative;
+            bottom: 0;
+            width: 100%;
+        }
+        h1 {
+            font-size: 2.5em;
+            margin: 0;
+        }
+        @media (max-width: 600px) {
+            main {
+                flex-direction: column;
+            }
+            .image-box {
+                margin-right: 0;
+                margin-bottom: 20px;
+            }
+            h1 {
+                font-size: 2em;
+            }
+            p {
+                font-size: 0.9em;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>About Us</h1>
+    </header>
+    <main>
+        <div class="image-box">
+            <img src="./images/contact-img.svg" alt="Travel Image">
+        </div>
+        <div class="content">
+            <section>
+                <p>Welcome to Global Footprints, your gateway to discovering the uttrakhand most mesmerizing destinations!</p>
+                <p>We are a group of passionate second-year B.Tech Computer Science students— Adarsh Singh, Abu Obaida, Adarsh Rai and Adnan Mohd—brought together by a shared love for technology and exploration.</p>
+                <p>At Global Footprints, we aim to blend innovation and wanderlust, crafting a platform that not only guides you through incredible travel destinations but also celebrates the cultural diversity and natural beauty of our world.</p>
+                <p>As computer science students, we bring technical expertise, creativity, and a drive for excellence to every feature of this site. From user-friendly interfaces to dynamic travel guides, our goal is to make your journey planning seamless and inspiring.</p>
+                <p>Whether you're dreaming of serene mountain getaways, historical landmarks, or vibrant cityscapes, Global Footprints is here to provide comprehensive, personalized, and up-to-date travel insights.</p>
+                <p>Join us as we build a community of explorers, one footprint at a time.</p>
+            </section>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2025 Global Footprints</p>
+    </footer>
+</body>
+</html>
