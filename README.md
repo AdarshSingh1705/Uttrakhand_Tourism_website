@@ -12,6 +12,31 @@ This website provides:
 - Travel guides, nearby attractions, and local experiences
 - Responsive design using Tailwind CSS
 
+✨ Features
+
+✅ Explore famous destinations in Uttarakhand (Haridwar, Rishikesh, Nainital, Kedarnath, etc.)
+✅ Detailed travel guides with images & descriptions 📸
+✅ Contact & inquiry forms ✉️
+✅ Mobile-responsive design 📱
+✅ Smooth animations & clean UI (React + Tailwind)
+✅ Backend setup for content management
+
+🛠️ Tech Stack
+
+Frontend:
+HTML 
+CSS 
+Javascript
+
+Backend:
+Node.js + Express
+MongoDB for storing travel data, user inquiries, etc.
+
+Other Tools
+
+Git & GitHub for version control
+JWT for authentication (if enabled)
+
 ## Folder Structure
 
 ```
@@ -56,9 +81,30 @@ Global-FootPrint/
    ```
 4. Open `public/Index.html` in your browser to explore the site.
 
-## Contributing
+👨‍💻 Contributing
 
-- Fork the repo and submit pull requests for new destinations, guides, or improvements.
-- Report issues or suggest features via GitHub Issues.
+Contributions are welcome!
+
+    Fork the repo
+    
+    Create a new branch (git checkout -b feature/your-feature)
+    
+    Commit changes (git commit -m "Added new feature")
+    
+    Push to branch (git push origin feature/your-feature)
+    
+    Open a Pull Request
+
+📜 License
+
+This project is licensed under the MIT License.
+
+📧 Contact
+
+Developed with ❤️ by Adarsh Singh
+
+🌐 LinkedIn: www.linkedin.com/in/adarshsingh1705 
+🌐 LeetCode: https://leetcode.com/u/AdarshSingh1705/
+📧 Email: as.adarshsingh13@gmail.com
 
 Explore the wonders of Uttarakhand with Global FootPrint!
