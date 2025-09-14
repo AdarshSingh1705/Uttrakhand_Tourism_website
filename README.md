@@ -1,18 +1,49 @@
+
 # Global FootPrint – Uttarakhand Tourism Website
+
+[](https://github.com/AdarshSingh1705/Uttrakhand_Tourism_website#global-footprint--uttarakhand-tourism-website)
 
 Welcome to the Global FootPrint project! This repository showcases a comprehensive tourism website dedicated to the beautiful destinations of Uttarakhand, India.
 
 ## Project Overview
 
+[](https://github.com/AdarshSingh1705/Uttrakhand_Tourism_website#project-overview)
+
 This website provides:
 
-- Detailed information about major tourist destinations in Uttarakhand
-- Individual pages for each destination (Auli, Dehradun, Nainital, Kedarnath, etc.)
-- Image galleries and media for visual exploration
-- Travel guides, nearby attractions, and local experiences
-- Responsive design using Tailwind CSS
+* Detailed information about major tourist destinations in Uttarakhand
+* Individual pages for each destination (Auli, Dehradun, Nainital, Kedarnath, etc.)
+* Image galleries and media for visual exploration
+* Travel guides, nearby attractions, and local experiences
+* Responsive design using Tailwind CSS
+
+✨ Features
+
+✅ Explore famous destinations in Uttarakhand (Haridwar, Rishikesh, Nainital, Kedarnath, etc.) 
+
+✅ Detailed travel guides with images & descriptions 📸 
+
+✅ Contact & inquiry forms ✉️ 
+
+✅ Mobile-responsive design 📱 
+
+✅ Smooth animations & clean UI (React + Tailwind) 
+
+✅ Backend setup for content management
+
+🛠️ Tech Stack
+
+Frontend: HTML CSS Javascript
+
+Backend: Node.js + Express MongoDB for storing travel data, user inquiries, etc.
+
+Other Tools
+
+Git & GitHub for version control JWT for authentication (if enabled)
 
 ## Folder Structure
+
+[](https://github.com/AdarshSingh1705/Uttrakhand_Tourism_website#folder-structure)
 
 ```
 Global-FootPrint/
@@ -34,13 +65,17 @@ Global-FootPrint/
 
 ## Key Features
 
-- **Destination Pages:** Each major location has a dedicated HTML page with images, travel info, and local tips.
-- **Image & Video Gallery:** Rich media content for immersive exploration.
-- **Travel Guides:** Documents and guides for planning trips.
-- **Responsive UI:** Built with Tailwind CSS for mobile and desktop.
-- **Modular Structure:** Easy to add new destinations and content.
+[](https://github.com/AdarshSingh1705/Uttrakhand_Tourism_website#key-features)
+
+* **Destination Pages:** Each major location has a dedicated HTML page with images, travel info, and local tips.
+* **Image & Video Gallery:** Rich media content for immersive exploration.
+* **Travel Guides:** Documents and guides for planning trips.
+* **Responsive UI:** Built with Tailwind CSS for mobile and desktop.
+* **Modular Structure:** Easy to add new destinations and content.
 
 ## Getting Started
+
+[](https://github.com/AdarshSingh1705/Uttrakhand_Tourism_website#getting-started)
 
 1. Clone the repository:
    ```
@@ -56,9 +91,34 @@ Global-FootPrint/
    ```
 4. Open `public/Index.html` in your browser to explore the site.
 
-## Contributing
+👨‍💻 Contributing
 
-- Fork the repo and submit pull requests for new destinations, guides, or improvements.
-- Report issues or suggest features via GitHub Issues.
+Contributions are welcome!
+
+```
+Fork the repo
+
+Create a new branch (git checkout -b feature/your-feature)
+
+Commit changes (git commit -m "Added new feature")
+
+Push to branch (git push origin feature/your-feature)
+
+Open a Pull Request
+```
+
+📜 License
+
+This project is licensed under the MIT License.
+
+📧 Contact
+
+Developed with ❤️ by Adarsh Singh
+
+🌐 LinkedIn: [www.linkedin.com/in/adarshsingh1705](http://www.linkedin.com/in/adarshsingh1705)
+
+🌐 LeetCode: [https://leetcode.com/u/AdarshSingh1705/](https://leetcode.com/u/AdarshSingh1705/)
+
+📧 Email: [as.adarshsingh13@gmail.com](mailto:as.adarshsingh13@gmail.com)
 
 Explore the wonders of Uttarakhand with Global FootPrint!
