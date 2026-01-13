@@ -1,0 +1,644 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito&display=swap');
+
+:root{
+    --orange: rgb(236, 153, 0);
+    --black: #222;
+    --white: #fff;
+    --light-black: #777;
+    --light-white: #fff9;
+    --dark-bg: rgba(0,0,0,.7);
+    --light-bg:#eee;
+    --border: 1rem solid var(--black);
+
+    /* ---box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+    --rext-shadow: 0 1.5rem 3rem rgba(0,0,0,.3); */
+}
+
+*{
+    font-family: 'Nunito', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-transform: capitalize;
+    outline: none; border: none;
+    text-decoration: none;
+    transition: all 0.2s linear;
+
+}
+
+*::selection{
+    background-color:var(--orange);
+    color: var(--white);
+}
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 4rem;
+    scroll-behavior: smooth;
+}
+
+html::-webkit-scrollbar{
+    width: 1rem;
+}
+
+html::-webkit-scrollbar-track{
+    background-color: #333;
+}
+html::-webkit-scrollbar-thumb{
+    background-color: var(--light-white);
+}
+
+section{
+    padding: 2rem 9%;
+}
+
+.heading{
+    text-align: center;
+    padding: 2.5rem 0;
+}
+
+.heading span{
+    color: var(--orange);
+    border-radius: .5rem;
+    padding: .2rem 1rem;
+    background: rgba(255, 165, 0, .2);
+    font-size: 3.5rem;
+    /* display: inline-block; */
+}
+/* .btn{
+    display: inline-block;
+    margin-top: 1rem;
+    background: rgb(236, 154, 2);
+    color: var(--white);
+    padding: .8rem 3rem;
+    border: .2rem solidvar(--orange);
+    border-radius: 5px;
+    font-size: 1.7rem;
+}
+
+.btn:hover{
+    background: rgba(255, 165, 0, .2);
+    color:var(--orange);
+} */
+
+/* header{
+    position: sticky;
+    top: 0; left: 0; right: 0;
+    background: #333;
+    z-index: 1000;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2rem 9%;
+}
+
+header .logo{
+    font-size: 2.5rem;
+    font-weight: bolder;
+    color: var(--white);
+    text-transform: uppercase;
+}
+
+header .logo span{
+     color:var(--orange);
+}
+
+header .navbar a{
+    color: var(--white);
+    font-size: 2rem;
+    margin: 0.8rem;
+}
+
+header .navbar a:hover{
+    color:var(--orange);
+}
+
+header .icons i{
+    font-size: 2.5rem;
+    color: var(--white);
+    cursor: pointer;
+    margin-right: 2rem;
+}
+
+header .icons i:hover{
+    color:var(--orange);
+}
+
+header .search-bar-container{
+    position: absolute;
+    top: 100%; left: 0; right: 0;
+    padding: 1.5rem 2rem;
+    background: #333;
+    border-top: .1rem solid rgba(255, 255, 255, .2);
+    display: flex;
+    align-items: center;
+    z-index: 1001;
+    clip-path: polygon(0 0, 100% 0, 100% 0, 0 0);
+}
+
+header .search-bar-container.active{
+    clip-path: polygon(0 0, 100% 0,100% 100%, 0 100%);
+}
+
+header .search-bar-container #search-bar{
+    width: 100%;
+    padding: 0;
+    text-transform: none;
+    color: #333;
+    font-size: 1.7rem;
+    border-radius: .5rem;
+}
+header .search-bar-container label{
+    color: var(--white);
+    cursor: pointer;
+    font-size: 3rem;
+    margin-left: 1.5rem;
+
+}
+
+header .search-bar-container label:hover{
+    color:var(--orange);
+} */
+
+
+.image-container {
+    position: relative;
+    width: 100%;
+    height: 75vh;
+    overflow: hidden;
+    margin: 0;/* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+.image-wrapper {
+    display: flex;
+    transition: transform 0.6s ease;
+    height: 100%;
+}
+
+.image-item {
+    min-width: 100%; /* Show one image at a time */
+    height: 100%; /* Adjust height as needed */
+}
+
+.image-container .image-item img {
+    width: 100%; /* Ensure full width */
+    height: 100%; /* Ensure full height */
+    object-fit: cover; /* Cover the area without distortion */
+    object-position: center; /* Center the image */
+    margin: 0; /* Ensure no margin */
+    padding: 0; /* Ensure no padding */
+}
+
+/* .image-container .content{
+    text-align: center;
+}
+
+.image-container .content h3{
+    font-size: 4.5rem;
+    color: var(--white);
+    text-transform: uppercase;
+    text-shadow: 0 .3rem .5rem rgba(0,0,0,.1);
+}
+
+.image-container .content p{
+    font-size: 2.5rem;
+    color: var(--white);
+    padding: .5rem 0;
+} */
+
+.image-container button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: rgba(0, 0, 0, 0.5);
+    border: .2rem solid var(--orange);
+    border-radius: 5px;
+    cursor: pointer;
+    padding: 10px;
+    color: rgb(255, 183, 0);
+    font-size: 20px;
+    z-index: 10; /* Ensure buttons are above images */
+}
+
+.scroll-left {
+    left: 5px; /* Position the left button */
+}
+
+.scroll-right {
+    right: 5px; /* Position the right button */
+}
+/*
+.destination-name {
+    font-size: 4rem;
+    text-align: left;
+    margin: 1rem 3rem;
+    color: var(--orange);
+
+} */
+
+a{
+    text-decoration: none;
+    color: var(--orange);
+}
+
+.about-destination {
+    display: flex;
+    justify-content: space-around;
+    padding: 2.5rem;
+    margin: 10rem 15rem;
+    border-radius: 10px;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.1);
+
+}
+
+h2{
+    font-size: 2.5rem;
+    color: var(--orange);
+}
+
+h3{
+    font-size: 1.8rem;
+    color: var(--orange);
+}
+p{
+    font-size: 1.5rem;
+    text-decoration: solid;
+    color: #260f0f;
+    margin: .2rem;
+}
+.box-container {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the boxes */
+    margin: 2rem;
+    gap: 2rem;
+}
+
+.best-time-to-visit {
+    background-color: white; /* Background color for boxes */
+    /* box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); Shadow for depth */
+    padding: 5rem;
+    margin: 1rem;
+    border-radius: 10px; /* Rounded corners */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width */
+}
+
+.services .box-container .box{
+    background-color: #fff; /* Background color for boxes */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 5rem;
+    margin: 1rem;
+    border-radius: 10px; /* Rounded corners */
+    flex: 1 1 300px; /* Flex-grow, flex-shrink, and base width */
+}
+
+.best-time-to-visit ul, .box ul {
+    list-style-type: none; /* Remove default list styling */
+    padding: 0; /* Remove padding */
+    font-size: 1.7rem;
+}
+
+.best-time-to-visit li, .box li {
+    margin: 0.5rem 0; /* Space between list items */
+}
+
+
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .box-container {
+        flex-direction: column; /* Stack boxes vertically on small screens */
+        align-items: center; /* Center boxes */
+    }
+}
+.food-cuisine {
+    display: flex;
+    flex-direction: row; /* Arrange cards horizontally */
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the cards */
+    margin: 3rem;
+    gap: 2rem;
+    padding: 3rem;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.local-cuisine, .street-food, .cafes-bakeries, .restaurants {
+    display: flex;
+    flex-direction: column; /* Stack content vertically */
+    align-items: center; /* Center items */
+    min-width: 250px; /* Minimum width for cards */
+    max-width: 300px; /* Maximum width for cards */
+    margin: 1rem; /* Margin around each card */
+    padding: 1rem;
+    background-color: white; /* Background color for cards */
+    border-radius: 0.5rem; /* Rounded corners */
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.local-cuisine img, .street-food img, .cafes-bakeries img, .restaurants img {
+    width: 100%;
+    height: 200px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area */
+    border-radius: 0.5rem; /* Rounded corners for images */
+    margin-bottom: 1rem; /* Space below images */
+}
+
+.local-cuisine:hover, .street-food:hover, .cafes-bakeries:hover, .restaurants:hover {
+    transform: scale(1.05); /* Scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .food-cuisine {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center cards */
+    }
+}
+.nearby-attractions {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5rem;
+    margin: 2rem;
+    justify-content: center;
+}
+.attraction-card {
+    position: relative;
+    flex: 1 1 30%;
+    max-width: 35rem;
+    height: 40rem;
+    overflow: hidden;
+    border-radius: 0.5rem;
+    box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.1);
+    background-color: white;
+    transition: filter 0.3s ease; /* Transition for blur effect */
+}
+
+.attraction-card a{
+    text-decoration: none;
+}
+.attraction-card img {
+    width: 100%;
+    height: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    transition: filter 0.3s ease; /* Transition for image blur effect */
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: rgba(255, 255, 255, 0.492); /* Semi-transparent background */
+    opacity: 0; /* Initial opacity of overlay */
+    transition: opacity 0.3s ease;
+    text-align: center;
+    padding: 1rem;
+    z-index: 1; /* Ensure overlay is above the image */
+}
+.attraction-card:hover img {
+    filter: blur(3px); /* Blur effect on image only */
+}
+.attraction-card:hover .overlay {
+    opacity: 1; /* Show overlay text on hover */
+}
+.attraction-card:hover .btn {
+    display: block; /* Show button on hover */
+}
+
+.attraction-card .btn {
+    background: linear-gradient(90deg, rgba(255, 94, 0, 1) 0%, rgba(255, 154, 0, 1) 100%);
+    color: white;
+    border: none;
+    width: 11rem; /* Fixed width */
+    height: 4.3rem; /* Fixed height */
+    border-radius: 5rem;
+    padding: 1rem;
+    cursor: pointer;
+    font-size: 1.56rem;
+    text-align: center;
+    font-weight: bold;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    opacity: 1; /* Initially hide the button */
+    transition: opacity 0.3s ease; /* Smooth transition for button */
+    position: relative; /* Ensure button is positioned relative to the overlay */
+    z-index: 1; /* Ensure button is above the overlay */
+}
+
+.attraction-card .btn:hover {
+    background: linear-gradient(90deg, rgba(255, 154, 0, 1) 0%, rgba(255, 94, 0, 1) 100%);
+    transform: scale(1.02);
+    box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2);
+}
+@media (max-width: 768px) {
+    .attraction-card {
+        flex: 1 1 100%;
+        max-width: 70%;
+    }
+}
+
+
+.how-to-reach {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    margin: 1rem;
+    justify-content: center;
+}
+
+.how-to-reach .card {
+    flex: 1 1 300px; /* Minimum width of 300px */
+    margin: 1.5rem;
+    max-width: 35rem; /* Maximum width of 30rem */
+    min-height: 40rem; /* Minimum height of 35rem */
+    border-radius: 0.5rem;
+    overflow: hidden;
+    background-color: white; /* Background color for the card */
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Add shadow for depth */
+    transition: transform 0.3s ease, box-shadow 0.3s ease; /* Smooth transition */
+}
+
+.how-to-reach .card-image img {
+    width: 100%;
+    height: 280px; /* Fixed height for images */
+    object-fit: cover; /* Cover the area */
+}
+
+.how-to-reach .card:hover {
+    transform: scale(1.02); /* Slightly scale up on hover */
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2); /* Increase shadow on hover */
+}
+
+.how-to-reach .card-content {
+    padding: 1rem; /* Padding for content */
+}
+
+.how-to-reach h3 {
+    margin: 0.5rem 0; /* Margin for heading */
+}
+
+.how-to-reach p {
+    margin: 0; /* Remove default margin */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .how-to-reach {
+        flex-direction: column; /* Stack cards vertically on small screens */
+        align-items: center; /* Center cards */
+    }
+}
+
+.accommodation-options {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the info box */
+    padding: 2rem; /* Add padding around the section */
+    margin-top: 5rem; /* Space above the section */
+}
+
+.accommodation-container {
+    margin-top: 4rem;
+    background-color: white; /* Background color for the info box */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Shadow for depth */
+    padding: 2rem; /* Padding inside the info box */
+    border-radius: 10px; /* Rounded corners */
+    max-width: 1024px; /* Maximum width for the info box */
+    width: 100%; /* Full width on smaller screens */
+    text-align: center; /* Center text */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .accommodation-container {
+        padding: 1rem; /* Reduce padding on smaller screens */
+    }
+}
+
+.activity {
+    display: flex;
+    flex-wrap: wrap; /* Allow wrapping for responsiveness */
+    justify-content: center; /* Center the cards */
+    gap: 2rem; /* Space between cards */
+    padding: 6rem; /* Padding around the section */
+}
+
+.activity-card {
+    flex: 1 1 300px; /* Allow cards to take up to 300px of the container width */
+    max-width: 30%; /* Maximum width for larger screens */
+    height: 41rem; /* Keep the height */
+    perspective: 1000px; /* Enable 3D perspective for animation */
+    position: relative; /* Ensure positioning context for inner elements */
+    margin: 1rem;
+}
+
+.card-inner {
+    position: absolute; /* Change to absolute to prevent layout shifts */
+    width: 100%;
+    height: 100%; /* Full height */
+    transition: transform 0.6s; /* Animation for flip effect */
+    transform-style: preserve-3d; /* Preserve 3D effect */
+    transform-origin: center; /* Set the rotation point to the center */
+}
+
+.activity-card:hover .card-inner {
+    transform: rotateY(180deg);
+}
+
+ .card-front, .card-back {
+        position: absolute;
+        width: 100%;
+        height: 90%; /* Adjust height */
+        backface-visibility: hidden; /* Hide back face when not visible */
+        border-radius: 0.5rem; /* Rounded corners */
+        overflow: hidden; /* Prevent overflow */
+        box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Optional shadow for depth */
+    }
+
+
+    .card-front {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .card-back {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        transform: rotateY(180deg); /* Rotate back face */
+    }
+
+    .card-front img {
+        width: 100%; /* Make image fill the container */
+        height: 92%; /* Set height for the image */
+        object-fit: cover; /* Cover the area without distortion */
+    }
+
+    .card-back h3, .card-back p {
+        padding: 1rem; /* Padding for content */
+        text-align: center; /* Center text */
+
+    }
+
+    .local-markets {
+        /* display: flex; */
+        gap: 2rem; /* Space between cards */
+        margin-bottom: 5rem; /* 32px / 16 */
+        padding: 5rem; /* 50px / 16 */
+        background-color: #f7f7f7;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px / 16 */
+    }
+    
+     /* .local-markets .heading {
+        font-size: 2.25rem;
+        font-weight: bold;
+        text-align: center;
+        margin-bottom: 1.25rem; 
+    }
+    
+    .local-markets .heading span {
+        font-size: 2.25rem; 
+        font-weight: bold;
+        margin-right: 0.3125rem; 
+    } */ 
+    
+    .local-markets .local-market {
+        margin-bottom: 1.25rem; /* 20px / 16 */
+        padding: 1.25rem; /* 20px / 16 */
+        background-color: #fff;
+        border: 1px solid #ddd;
+        box-shadow: 0 0 0.625rem rgba(0, 0, 0, 0.1); /* 10px / 16 */
+    }
+    
+    .local-markets .local-market h3 {
+        font-size: 1.7rem; /* 24px / 16 */
+        font-weight: bold;
+        margin-bottom: 0.625rem; /* 10px / 16 */
+    }
+    
+    .local-markets .local-market p {
+        font-size: 1.4rem; /* 18px / 16 */
+        margin-bottom: 1.25rem; /* 20px / 16 */
+    }
+    
+    .local-markets .local-market img {
+        width: 100%;
+        height: 12.5rem; /* 200px / 16 */
+        object-fit: cover;
+        margin-bottom: 1.25rem; /* 20px / 16 */
+    }
+
+
+    

@@ -1,0 +1,720 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mussoorie</title>
+    <link rel="icon" href="./images/Fevicon-3.png" type="image/png" sizes="196x196">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="./D-styles.css">
+
+
+</head>
+<body>
+
+    <!-- header section start -->
+    <header>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="./Index.html" class="logo"><span>G</span>lobal <span>F</span>oot<span>P</span>rint</a>
+        <nav class="navbar">
+          <a href="./Index.html">Home</a>
+  
+    <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button class="dropbtn"><a href=" #destinations">Region</a></button>
+            <div class="dropdown-content">
+                <div class="dropdown-row">
+                    <a href="./Dehradun.html"><P>Dehradun</P></a>
+                    <a href="./Kedarnath.html"><P>Kedarnath</P></a>
+                    <a href="./Badrinath"><P>Badrinath</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Mussoorie.html"><P>Mussoorie</P></a>
+                    <a href="./Rishikesh.html"><P>Rishikesh</P></a>
+                    <a href="./Haridwar.html"><P>Haridwar</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Nainital.html"><P> Nainital </P></a>
+                    <a href="./Jim_corbett.html"><P>Jim_Corbett</P></a>
+                    <a href="./Rajaji_National_Park.html"><P>Rajaji N. P.</P></a>
+                </div>
+              </div>
+            </div>
+        </div>
+
+          <a href="./Index.html">Destinations</a>
+          <a href="#services">Services</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <li id="user-info" style="display:none;">
+            <a href="#" id="user-link" title="User Profile"><span id="user-name">User</span></a>
+        </li>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Search for destinations...." autocomplete="off">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+  </header>    
+ 
+  <!-- login form container -->
+    <div class="login-form-container" id="login-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form id="login-form">
+          <h3>Login</h3>
+          <p id="login-message" class="message"></p>
+          <input type="email" id="email" class="box" placeholder="Enter your email" required autocomplete="new-email" name="email">
+          <input type="password" id="password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="password">
+          <input type="submit" value="Login Now" class="btn">
+          <p>Don't have an account? <a href="#" id="show-signup">Register now</a></p>
+      </form>
+  </div>
+
+  <!-- signup form container -->
+  <div class="login-form-container" id="signup-container">
+      <i class="fas fa-times" id="form-close-signup"></i>
+      <form id="signup-form">
+          <h3>Sign Up</h3>
+          <p id="signup-message" class="message"></p>
+          <input type="text" id="signup-name" class="box" placeholder="Enter your name" required autocomplete="name" name="name">
+          <input type="email" id="signup-email" class="box" placeholder="Enter your email" required autocomplete="email" name="email">
+          <input type="password" id="signup-password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="signup-password">
+          <input type="password" id="confirm-password" class="box" placeholder="Confirm your password" required autocomplete="new-password" name="confirm-password">
+          <input type="button" value="Close" class="btn" id="close-signup">
+          <input type="submit" value="Sign Up Now" class="btn">
+          <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+      </form>
+  </div>
+  
+  <!-- header section end -->
+
+
+
+    <!-- Carousel of Destination Photos -->
+    <div class="image-container">
+        <button class="scroll-left">←</button> <!-- Left Scroll Button -->
+        <div class="image-wrapper">
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/mussoorie.jpg" alt="Image 1">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/1Mussoorie.jpg" alt="Image 2">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/mussoorie2.jpg" alt="Image 3">
+            </div>
+            <div class="image-item">
+                <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/mussoorie1.JPG" alt="Image 4">
+            </div>
+        </div>
+        <button class="scroll-right">→</button> <!-- Right Scroll Button -->
+    </div>
+    <br>
+    <!-- Destination Name -->
+    <h1 class="heading">
+        <span>m</span>
+        <span>u</span>
+        <span>s</span>
+        <span>s</span>
+        <span>o</span>
+        <span>o</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+    </h1>
+    
+    <!-- About the Destination -->
+    <section class="about-destination">
+        <div>
+            <br>
+            <h2 >Mussoorie: The Queen of the Hills</h2>
+            <br>
+            <p>
+                <strong>Mussoorie</strong>, also known as the "Queen of the Hills," is a charming hill station in Uttarakhand, just 35 km from Dehradun. Set amidst the Shivalik range, Mussoorie is famous for its scenic beauty, colonial architecture, and pleasant weather. Perched at an altitude of 1,880 meters, it offers breathtaking views of the Himalayas. Known for its Victorian-era buildings, Mussoorie retains a quaint charm that attracts visitors seeking peace and natural beauty.
+            </p>
+            <br>
+            <p>
+                Popularly referred to as a honeymoon destination, Mussoorie also attracts adventure enthusiasts, nature lovers, and history buffs. The rich flora and fauna, along with the vibrant culture, make Mussoorie an all-season getaway. Visitors can enjoy activities like trekking, paragliding, and exploring local markets.
+            </p>
+            <br>
+            <p>
+                The town's proximity to Dehradun makes it an ideal weekend retreat. Whether you're looking for adventure or relaxation, Mussoorie offers a perfect blend of both. Its picturesque landscapes and serene environment make it a must-visit destination in Uttarakhand.
+            </p>
+            <br>
+        </div>
+    </section>
+
+<!--Best Time to visit-->
+<section class="services">
+    <h1 class="heading">
+        <span>v</span>
+        <span>i</span>
+        <span>s</span>
+        <span>i</span>
+        <span>t</span>
+        <span>-</span>
+        <span>t</span>
+        <span>i</span>
+        <span>m</span>
+        <span>e</span>
+        <span>&</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>n</span>
+        <span>e</span>
+        <span>r</span>
+        <span>a</span>
+        <span>r</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br>
+<div class="box-container">
+
+    <div class="best-time-to-visit">
+        <br>
+        <h2>Best Time to Visit:</h2>
+        <ul>
+            <li><strong>* Summers (March-June):</strong> Ideal for sightseeing and outdoor activities with pleasant temperatures (15°C to 25°C). Perfect for exploring attractions and nature walks.</li>
+            <br>
+            <li><strong>* Monsoons (July-September):</strong> Heavy rains make the hill station lush but bring slippery roads and landslides. Great for photography and misty atmospheres.</li>
+            <br>
+            <li><strong>* Winters (October-February):</strong> Chilly with temperatures dropping to 1°C, often with snowfall. Ideal for snow-covered landscapes and cozy winter retreats.</li>
+          </ul>
+    </div>
+
+
+    <!-- Itinerary section start-->
+
+    <div class="box" id="itinerary" >        
+        
+       <h2>Itinerary</h2>
+       <br>
+       <h3>3-Day Itinerary</h3>
+       <ul>
+         <p><strong>Day 1:</strong> Arrive, visit Kempty Falls, stroll Mall Road.</p>
+         <p><strong>Day 2:</strong> Gun Hill, cable car, Camel’s Back Road, Mussoorie Lake.</p>
+         <p><strong>Day 3:</strong> Explore Landour, visit Christ Church.</p>
+        </ul>  
+       <h3>4-Day Itinerary</h3>
+       <ul> 
+         <p><strong>Day 1:</strong> Kempty Falls, Mall Road.</p>
+         <p><strong>Day 2:</strong> Gun Hill, Camel’s Back Road, Mussoorie Lake.</p>
+         <p><strong>Day 3:</strong> Landour, Clock Tower, nature trails.</p>
+         <p><strong>Day 4:</strong> Lake Mist, Tibetan Buddhist Temple.</p>
+        </ul> 
+       <h3>5-Day Itinerary</h3>
+       <ul>  
+         <p><strong>Day 1:</strong> Kempty Falls, Mall Road.</p>
+         <p><strong>Day 2:</strong> Gun Hill, Camel’s Back Road, Mussoorie Lake.</p>
+         <p><strong>Day 3:</strong> Day trip to Dhanaulti, eco-parks, apple orchards.</p>
+         <p><strong>Day 4:</strong> Landour village, nature walk.</p>
+         <p><strong>Day 5:</strong> Happy Valley, mountain views.</p>
+        </ul>
+    </div>
+</div>
+
+</section>
+
+<!-- Itinerary section end -->
+
+ <!-- Food & Cuisine Section -->
+  <br><br><br>
+ <h1 class="heading">
+    <span>F</span>
+    <span>o</span>
+    <span>o</span>
+    <span>d</span>
+    <span>&</span>
+    <span>c</span>
+    <span>u</span>
+    <span>s</span>
+    <span>i</span>
+    <span>n</span>
+    <span>e</span>
+</h1>
+
+ <section class="food-cuisine">
+
+    <div class="local-cuisine">
+        <h3>Local Cuisine</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/kafuli.jpeg" alt="Local Cuisine" />
+        <br>
+        <p>Try local specialties like Aloo ke Gutke, Kafuli, and Bal Mithai, which are staples in the region.</p>
+    </div>
+    
+    <div class="street-food">
+        <h3>Street Food</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/pani puri.jpeg" alt="Street Food" />
+        <br>
+        <p>Savor street food like Chaat, Pani Puri, and Aloo Tikki from local vendors on Mall Road.</p>
+    </div>
+    
+    <div class="cafes-bakeries">
+        <h3>Cafes and Bakeries</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/chic chocolate.jpeg" alt="Cafes and Bakeries" />
+        <br>
+        <p>Visit famous bakeries like Chic Chocolate and The Cambridge Book Depot for freshly baked cakes, cookies, and pastries.</p>
+    </div>
+    
+    <div class="restaurants">
+        <h3>Restaurants</h3>
+        <br>
+        <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/kalsang.jpeg" alt="Restaurants" />
+        <br>
+        <p>Enjoy diverse dining options at popular restaurants like Kalsang and The Tavern, offering North Indian, Tibetan, and continental cuisine.</p>
+    </div>
+
+ </section>
+
+ <!-- Accommodation Options -->
+ <section class="accommodation-options">
+
+ <h1 class="heading">
+    <span>a</span>
+    <span>c</span>
+    <span>c</span>
+    <span>o</span>
+    <span>m</span>
+    <span>m</span>
+    <span>o</span>
+    <span>d</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+    <span>s</span>
+</h1>
+
+    <div class="accommodation-container">
+
+        <h3>Luxury Hotels</h3>
+        <p>Mussoorie offers luxurious stays at properties like “Jaypee Residency Manor” and “The Savoy,” which offer top-notch amenities, incredible views, and an ideal retreat for relaxation.</p>
+        
+        <br><h3>Mid-Range Hotels</h3>
+        <p>For more affordable stays, “Hotel Crystal Palace” and “The Riverview Hotel” offer comfortable rooms with modern amenities at reasonable prices.</p>
+        
+        <br><h3>Budget Options</h3>
+        <p>Budget options like “Zostel Mussoorie” and “Hotel Padmini Niwas” provide cozy and friendly atmospheres, with basic amenities suited for backpackers and solo travelers.</p> 
+    </div>
+</section>
+
+ <!-- Nearby Attractions -->
+ <br><br><br>
+ <section class="Attractions">
+    <h1 class="heading">
+        <span>n</span>
+        <span>e</span>
+        <span>a</span>
+        <span>r</span>
+        <span>b</span>
+        <span>y</span>
+        <span>-</span>
+        <span>a</span>
+        <span>t</span>
+        <span>t</span>
+        <span>r</span>
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>o</span>
+        <span>n</span>
+        <span>s</span>
+    </h1>
+    <br><br>
+
+    <div class="nearby-attractions">
+
+    <div class="attraction-card">
+        <img alt="Gun hill" src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/Nearby Attraction/2. Gun Hill/About+Images/images/gun hill4.jpeg"/>
+        <div class="overlay">
+            <h2>Gun Hill Overview</h2>
+            <br>       
+            <p><strong>Location:</strong> Mussoorie's second-highest peak, offering stunning views of the Doon Valley and Himalayan peaks.</p>
+
+            <p><strong>Historical Significance:</strong> Once a colonial-era cannon site, it now attracts tourists with its rich history.</p>
+            
+            <p><strong>Altitude:</strong> Situated at an elevation of 2,024 meters.</p>
+            
+            <p><strong>Attractions:</strong> Cable car rides, small shops, eateries, and telescopes for exploring the scenic landscapes.</p>
+            
+            <p><strong>Experience:</strong> Provides an unparalleled vantage point to soak in the majestic scenery and vibrant sunsets.</p>
+            
+            <a href="Gun Hill">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <img alt="Kempty Falls" src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/Nearby Attraction/1. Kempty Fall/About+Images/Images/kempty-falls.jpeg"/>
+        <div class="overlay">
+            <h2>kempty-falls</h2>
+
+            <p><strong>Location:</strong> Nestled amidst the lush greenery of the Mussoorie hills.</p>
+
+            <p><strong>Height:</strong> A stunning 40-foot waterfall cascading into a refreshing natural pool.</p>
+            
+            <p><strong>Altitude:</strong> Situated at an altitude of 1,364 meters.</p>
+            
+            <p><strong>Attractions:</strong> Perfect for picnics, family outings, and romantic getaways, offering natural beauty and recreational fun.</p>
+            
+            <p><strong>Experience:</strong> The soothing sound of gushing water and serene surroundings create an unforgettable experience.</p>
+              
+        <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+    <img alt="mussoorie" src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/Nearby Attraction/4. Mussoorie Lake/About+Images/Images/mussoorie-lake4.jpg"/>
+        <div class="overlay">
+            <h2>mussoorie Lake</h2>
+            <p><strong>Location:</strong> Located about 6 km from Mussoorie on the Dehradun-Mussoorie Road.</p>
+
+            <p><strong>Surroundings:</strong> Picturesque spot surrounded by lush green hills.</p>
+            
+            <p><strong>Attractions:</strong> Popular destination for families and couples seeking a peaceful escape.</p>
+            
+            <p><strong>Activities:</strong> Paddle boating on calm waters, offering stunning views of the surrounding hills and valleys.</p>
+            
+            <p><strong>Experience:</strong> Nearby stalls serve local snacks and tea, enhancing the overall experience.</p>
+                   <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <img alt="Happy valley" src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/Nearby Attraction/6. Happy Valley/About+Images/images/happy-valley4.jpg"/>
+        <div class="overlay">
+            <h2>happy valley Overview</h2>
+
+            <p><strong>Location:</strong> Tranquil locality in Mussoorie, Uttarakhand, known for its serene ambiance and lush greenery.</p>
+
+            <p><strong>Cultural Significance:</strong> Tibetan settlement established in 1959, offering natural beauty and rich cultural heritage.</p>
+            
+            <p><strong>Attractions:</strong> Monasteries, gardens, and scenic walking trails ideal for nature enthusiasts and spiritual seekers.</p>
+            
+            <p><strong>Highlights:</strong> Tibetan Buddhist Temple (Shedup Choepelling Temple) with vibrant murals and prayer flags.</p>
+            
+            <p><strong>Adventure:</strong> Starting point for the trek to Cloud’s End, adding an adventurous element.</p>
+
+            <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <img alt="Lanbour" src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/Nearby Attraction/5. Landour/About+Images/images/landour3.jpg"/>
+        <div class="overlay">
+            <h2>Landour Overview</h2>
+
+            <p><strong>Location:</strong> Tranquil hill station near Mussoorie, Uttarakhand, known for colonial charm and breathtaking Himalayan views.</p>
+
+            <p><strong>Environment:</strong> Serene retreat with cool climate, dense oak and pine forests.</p>
+            
+            <p><strong>Historical Significance:</strong> Rich history from the British Raj, with colonial architecture and cobbled streets.</p>
+            
+            <p><strong>Attractions:</strong> Lal Tibba, St. Paul’s Church, Landour Language School, cozy cafés, and unique shops.</p>
+            
+            <p><strong>Experience:</strong> Ideal for nature enthusiasts, history buffs, and food lovers, offering handcrafted goods and local delicacies.</p>
+            
+            <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+    <div class="attraction-card">
+        <img alt="Dhanaulti" src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/Nearby Attraction/7. Dhanaulti/About+Images/Images/dhanaulti3.jpg"/>
+        <div class="overlay">
+            <h2>Dhanaulti Overview</h2>
+
+            <p><strong>Location:</strong> Serene hill station in Uttarakhand, perched at an altitude of 2,286 meters.</p>
+
+            <p><strong>Environment:</strong> Enveloped by dense forests of deodar, oak, and rhododendron, offering mesmerizing views of the snow-capped Himalayas.</p>
+            
+            <p><strong>Attractions:</strong> Renowned for its eco-parks, peaceful ambiance, and adventure activities like trekking and camping.</p>
+            
+            <p><strong>Weather:</strong> Pleasant weather, ideal for families, honeymooners, and solo travelers.</p>
+            
+            <p><strong>Highlights:</strong> Quaint villages, historical temples, and scenic spots providing a refreshing escape.</p>
+            
+            <a href="link_to_attraction1.html">
+            <button class="btn">
+                Explore
+            </button>
+          </a>
+        </div>
+    </div>
+
+ </div>
+</section>
+    <!-- How to Reach Section -->
+    <br><br><br>
+    <h1 class="heading">
+        <span>h</span>
+        <span>o</span>
+        <span>w</span>
+        <span>-</span>
+        <span>t</span>
+        <span>o</span>
+        <span>-</span>
+        <span>r</span>
+        <span>e</span>
+        <span>a</span>
+        <span>c</span>
+        <span>h</span>
+    </h1>
+    <br>
+    <section class="how-to-reach">
+
+        <div class="card">
+            <div class="card-image" >
+                <img src="./images/gallery/by-air.png" alt="By Air" />
+            </div>
+            <div class="card-content">
+                <h3>By Air</h3>
+        <br>
+                <p>The nearest airport to Mussoorie is Jolly Grant Airport in Dehradun, located about 60 km away. From the airport, you can hire a taxi or take a bus to reach Mussoorie.</p>
+         <br>
+           </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" >
+                <img src="./images/gallery/by-train.jpg" alt="By Train"  />
+            </div>
+            <div class="card-content">
+                <h3>By Train</h3>
+           <br>
+                <p>Dehradun Railway Station, 35 km from Mussoorie, connects the town to major cities. From Dehradun, taxis and buses can take you to Mussoorie.</p>
+          <br>
+            </div>
+        </div>
+
+        <div class="card">
+            <div class="card-image" >
+                <img src="./images/gallery/by-road.jpg" alt="By Road" />
+            </div>
+            <div class="card-content" padding: 1rem>
+                <h3>By Road</h3>
+            <br>
+                <p>Mussoorie is well-connected by road with regular buses from Delhi and Dehradun. Private taxis are also available for a more personalized journey.</p>
+            <br>
+            </div>
+        </div>
+    </section>
+
+<!-- How to reach section ends-->
+
+<!-- Activity Section -->
+<br><br>
+    <h1 class="heading">
+        <span>a</span>
+        <span>c</span>
+        <span>t</span>
+        <span>i</span>
+        <span>v</span>
+        <span>i</span>
+        <span>t</span>
+        <span>i</span>
+        <span>e</span>
+        <span>s</span>
+    </h1>
+    <br>
+    <section class="activity" id="activity-section">
+        
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/camping.jpg" alt="Activity 1" />
+                   <br> <h3>Trekking & Camping</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Trekking & Camping:</h3>
+                    <p>Mussoorie, nestled in the Himalayas, offers captivating trekking trails like the Nag Tibba Trek and Jwala Devi Temple trek. These routes showcase panoramic mountain views, dense forests, and serene landscapes, perfect for adventure seekers and nature enthusiasts. Whether it’s a challenging hike or a spiritual retreat, Mussoorie’s treks provide unforgettable experiences, blending adventure with the tranquility of the hills. Explore its beauty!</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front"> 
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/boating.jpg" alt="Activity 2" />
+                    <h3>Boating</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Boating:</h3>
+                    <p>Mussoorie Lake, a serene spot near the hill station, offers a delightful pedal boating experience amidst picturesque surroundings. Surrounded by lush greenery and rolling hills, the lake provides a tranquil escape for visitors. Whether with family or friends, pedal boating here is a perfect way to unwind while soaking in the breathtaking natural beauty of Mussoorie’s enchanting landscape.</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="activity-card">
+            <div class="card-inner">
+                <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/adventure sport.jpg" alt="Activity 3" />
+                    <h3>Adventure sports</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Adventure sports:</h3>
+                    <p>Paragliding and rock climbing are among the most sought-after adventure activities in Mussoorie, attracting thrill-seekers from all over. With its scenic landscapes and favorable weather, the hill station provides an ideal setting for these exhilarating sports. Several operators offer guided experiences, ensuring safety and excitement. Whether soaring through the skies or scaling rocky cliffs, Mussoorie promises unforgettable adventures for adrenaline enthusiasts.</p>
+                </div>
+            </div>
+        </div>
+
+    <div class="activity-card">
+        <div class="card-inner">
+            <div class="card-front">
+                    <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/cycling.jpg" alt="Activity 1" />
+                <br>
+                    <h3>Cycling Tours</h3>
+                </div>
+                <div class="card-back">
+                    <h3>Cycling Tours:</h3>
+                    <p>Rent a cycle and explore the serene lanes of Landour or picturesque routes around Mussoorie. Cycling is a fantastic way to soak in natural beauty, from lush greenery to panoramic mountain views. Pedal through peaceful trails, charming villages, and historic landmarks like Christ Church. It's an eco-friendly and refreshing way to experience the hill station at your own pace, offering a unique and memorable adventure in Mussoorie and Landour's tranquil surroundings.</p>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<br><br><br>
+
+<!-- travel tip -->
+<h1 class="heading">
+    <span>t</span>
+    <span>r</span>
+    <span>a</span>
+    <span>v</span>
+    <span>e</span>
+    <span>l</span>
+    <span>-</span>
+    <span>t</span>
+    <span>i</span>
+    <span>p</span>
+    <span>s</span>
+</h1>
+
+<div class="local-markets" id="local-markets">
+
+    <div class="local-market">
+        <h3>Clothing</h3>
+        <p>Always carry layers, as the weather in Mussoorie can be unpredictable. Comfortable walking shoes are essential for exploring the hill station.</p>
+    </div>
+
+    <div class="local-market">
+        <h3>Health</h3>
+        <p>Keep basic medicines and a first aid kit handy. Staying hydrated and taking it easy if you experience altitude sickness is crucial.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Transport</h3>
+        <p>Local taxis are great for sightseeing, but walking around can offer a more intimate experience. The ropeway to Gun Hill is a must-try for spectacular views.</p>
+    </div>
+    
+    <div class="local-market">
+        <h3>Safety</h3>
+        <p>Avoid trekking in dense forests or remote areas without a guide. During monsoon season, be cautious of landslides and slippery paths.</p>
+    </div>
+
+</div>
+
+
+<!-- footer section start -->
+<section class="footer">
+    <div class="box-container">
+      
+      <div class="box">
+        <h3>quick links</h3>
+        <a href="#home"><i class="fas fa-angle-right"></i>home</a>
+        <a href="#services"><i class="fas fa-angle-right"></i>services</a>
+        <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a>
+        <a href="#destinations"><i class="fas fa-angle-right"></i>destinations</a>
+        <!-- <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a> -->
+      </div>
+      <div class="box">
+        <h3>extra links</h3>
+        <a href="About.html"><i class="fas fa-angle-right"></i>about us</a>
+        <a href="#contact"><i class="fas fa-angle-right"></i>contact</a>
+        <a href="#review"><i class="fas fa-angle-right"></i>review</a>
+        <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+        <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+      </div>
+      <div class="box">
+        <h3>follow us</h3>
+        <a href="https://www.linkedin.com/in/adarsh-singh-25a616303?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"><i class="fab fa-linkedin"></i> linkedin</a>
+        <a href="https://www.facebook.com/share/15ZsxatotK/"><i class="fab fa-facebook-f"></i> facebook</a>
+        <a href="https://www.instagram.com/abu.obaida.00/"><i class="fab fa-instagram"></i> instagram</a>
+        <a href="https://x.com/ADNAN621636?t=OCuLwhVJ3PdWdR5l4-XBWQ&s=08"><i class="fab fa-twitter"></i> x</a>
+      </div>
+   
+    </div>
+   
+    <h1 class="credit">created by <span>Mr.Adarsh Singh</span> | all rights reserved</h1>
+   
+   </section>
+   <!-- footer section end -->
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="./D-scripts.js"></script>
+    <script src="./scripts.js"></script>
+
+ <script>
+    
+    const imageWrapper = document.querySelector('.image-wrapper');
+    const images = document.querySelectorAll('.image-item');
+    let currentIndex = 0; // Track the current image index
+
+function showImage(index) {
+    imageWrapper.style.transform = `translateX(-${index * 100}%)`; // Move to the current image
+}
+
+function scrollLeft() {
+    currentIndex = (currentIndex > 0) ? currentIndex - 1 : images.length - 1; // Loop back to the last image
+    showImage(currentIndex);
+}
+
+function scrollRight() {
+    currentIndex = (currentIndex < images.length - 1) ? currentIndex + 1 : 0; // Loop back to the first image
+    showImage(currentIndex);
+}
+
+const scrollLeftButton = document.querySelector('.scroll-left');
+const scrollRightButton = document.querySelector('.scroll-right');
+
+scrollLeftButton.addEventListener('click', scrollLeft);
+scrollRightButton.addEventListener('click', scrollRight);
+
+ </script>
+</body>
+</html>
+
+
+

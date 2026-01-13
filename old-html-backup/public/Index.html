@@ -1,0 +1,981 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global FootPrint</title>
+    <link rel="icon" href="./images/Fevicon-3.png" type="image/png" sizes="196x196"> 
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="./styles.css">
+
+   
+</head>
+<body>
+  
+  <!-- special-header -->
+    <!-- header section start -->
+  <header>
+        <div id="menu-btn" class="fas fa-bars"></div>
+        <a href="#home" class="logo"><span>G</span>lobal <span>F</span>oot<span>P</span>rint</a>
+        <nav class="navbar">
+          <a href="#home">Home</a>
+  
+    <!-- Dropdown Menu -->
+          <div class="dropdown">
+            <button class="dropbtn"><a href="./All_Destinations.html">Destinations</a></button>
+            <div class="dropdown-content">
+                <div class="dropdown-row">
+                    <a href="./Dehradun.html"><P>Dehradun</P></a>
+                    <a href="./Kedarnath.html"><P>Kedarnath</P></a>
+                    <a href="./Badrinath"><P>Badrinath</P></a>
+                </div>
+                <div class="dropdown-row">
+                    <a href="./Mussoorie.html"><P>Mussoorie</P></a>
+                    <a href="./Rishikesh.html"><P>Rishikesh</P></a>
+                    <a href="./Haridwar.html"><P>Haridwar</P></a>
+                </div>
+
+                <div class="dropdown-row">
+                  <a href="./Nainital.html"><P>Nainital</P></a>
+                  <a href="./Jim_corbett.html"><P>Jim_Corbett</P></a>
+                  <a href="./Rajaji_National_Park.html"><P>Rajaji N. P.</P></a>
+              </div>
+            </div>
+        </div>
+
+          <!-- <a href="#destinations">Destinations</a> -->
+          <a href="#services">Services</a>
+          <a href="#review">Review</a>
+          <a href="#contact">Contact</a>
+          <li id="user-info" style="display:none;">
+            <a href="#" id="user-link" title="User Profile"><span id="user-name">User</span></a>
+        </li>
+        </nav>
+        <div class="icons">
+          <i class="fas fa-search" id="search-btn"></i>
+          <i class="fas fa-user" id="login-btn"></i>
+      </div>
+      <form action="" class="search-bar-container">
+          <input type="search" id="search-bar" placeholder="Search for destinations...." autocomplete="off">
+          <label for="search-bar" class="fas fa-search"></label>
+      </form>
+  </header>    
+ 
+  <!-- login form container -->
+    <div class="login-form-container" id="login-container">
+      <i class="fas fa-times" id="form-close"></i>
+      <form id="login-form">
+          <h3>Login</h3>
+          <p id="login-message" class="message"></p>
+          <input type="email" id="email" class="box" placeholder="Enter your email" required autocomplete="new-email" name="email">
+          <input type="password" id="password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="password">
+          <input type="submit" value="Login Now" class="btn">
+          <p>Don't have an account? <a href="#" id="show-signup">Register now</a></p>
+      </form>
+  </div>
+
+  <!-- signup form container -->
+  <div class="login-form-container" id="signup-container">
+      <i class="fas fa-times" id="form-close-signup"></i>
+      <form id="signup-form">
+          <h3>Sign Up</h3>
+          <p id="signup-message" class="message"></p>
+          <input type="text" id="signup-name" class="box" placeholder="Enter your name" required autocomplete="name" name="name">
+          <input type="email" id="signup-email" class="box" placeholder="Enter your email" required autocomplete="email" name="email">
+          <input type="password" id="signup-password" class="box" placeholder="Enter your password" required autocomplete="new-password" name="signup-password">
+          <input type="password" id="confirm-password" class="box" placeholder="Confirm your password" required autocomplete="new-password" name="confirm-password">
+          <input type="button" value="Close" class="btn" id="close-signup">
+          <input type="submit" value="Sign Up Now" class="btn">
+          <p>Already have an account? <a href="#" id="show-login">Login here</a></p>
+      </form>
+  </div>
+  
+ <!-- home section start  -->
+    <section class="home" id="home">
+      <div class="content">
+       <h3>Adventure is worthwhile</h3>
+       <p>Discover new place with us, adventure awaits</p>
+       <a href="./Rishikesh.html" class="btn">Discover more</a>
+      </div>
+
+      <div class="controls">
+       <span class="vid-btn active" data-src="./images/vid-1.mp4"></span>
+       <span class="vid-btn" data-src="./images/vid-2.mp4"></span>
+       <span class="vid-btn" data-src="./images/vid-3.mp4"></span>
+       <span class="vid-btn" data-src="./images/vid-4.mp4"></span>
+       <span class="vid-btn" data-src="./images/vid-5.mp4"></span>
+      </div>
+
+      <div class="video-container">
+           <video src="./images/vid-1.mp4" id="video-slider" loop autoplay muted></video>  
+      </div>
+</section>
+<!-- home section end -->
+
+<!-- destinations section start -->
+ <br><br>
+<section class="destinations" id="destinations">
+  <h1 class="heading">
+    <span>d</span>
+    <span>e</span>
+    <span>s</span>
+    <span>t</span>
+    <span>i</span>
+    <span>n</span>
+    <span>a</span>
+    <span>t</span>
+    <span>i</span>
+    <span>o</span>
+    <span>n</span>
+    <span>s</span>
+  </h1>
+
+  <br><br>
+  <div class="box-container">
+    
+    <div class="box">
+      <img src="./Uttarakhand/Dehradun/About+Images/dehradun.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Dehradun</h3>
+        <p><strong>Dehradun</strong>, is nestled in the Himalayas, offers scenic beauty, education, and tranquility.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Dehradun.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/1Mussoorie.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Mussoorie</h3>
+        <p>Mussoorie, a hill station in the Himalayas, offers stunning views, colonial charm, and serene walks.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Mussoorie.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/gallery/g-5.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Badrinath</h3>
+        <p>Badrinath, nestled in the Himalayas, is renowned for its sacred temple and breathtaking natural beauty</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Badrinath.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/pack-3.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i> Rishikesh</h3>
+        <p>Rishikesh, nestled in the Himalayas, is known for spiritual retreats, yoga, and serene Ganges River.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Rishikesh.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/haridwar 2.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Haridwar</h3>
+        <p>Haridwar, on the banks of the Ganges, is renowned for its spiritual significance and vibrant rituals.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Haridwar.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/pack-1.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>KedarNath</h3>
+        <p>Kedarnath is famed for its sacred temple, majestic Himalayas, and profound spiritual peace.
+        </p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./kedarnath.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/gallery/g-11.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Nainital</h3>
+        <p>Nainital, nestled in the Kumaon region, features a serene lake, scenic beauty, and pleasant weather</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Nainital.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/gallery/g-2.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>valley of flowers</h3>
+        <p>Valley of Flowers, in Himalayas, dazzles with alpine blooms and breathtaking natural beauty.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Vally_of_flower.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/gallery/g-8.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Gangotari</h3>
+        <p>Gangotri: is a sacred Himalayan town, is the Gange's source, beckons spiritual pilgrims.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Gangotri.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/elephant.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Rajaji national park</h3>
+        <p>Rajaji National Park, Uttarakhand, shelters elephants, tigers, diverse wildlife, and stunning landscapes.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="Rajaji_National_Park.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/rajaji 2.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>jim corbett</h3>
+        <p>Jim Corbett National Park, in Uttarakhand, is famous for its diverse wildlife, especially tigers, and beautiful landscapes.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Jim_corbett.html" class="btn">Explore</a>
+      </div>
+    </div>
+
+    <div class="box">
+      <img src="./images/gallery/g-12.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Auli</h3>
+        <p>Auli, Uttarakhand, offers pristine skiing slopes, stunning views, snow-capped peaks, and serene tranquility.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="./Auli.html" class="btn">Explore</a>
+      </div>
+    </div>
+<!-- 
+    <div class="box">
+      <img src="./images/pack-12.jpg" alt="image">
+      <div class="content">
+        <h3><i class="fas fa-map-marker-alt"></i>Yamunotri</h3>
+        <p>Yamunotri, in Uttarakhand, is the sacred source of the Yamuna River, attracting pilgrims and trekkers.</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+        </div>
+        <a href="#" class="btn">Explore</a>
+      </div>
+    </div> -->
+  </div>
+
+  <div class="load-more">
+    <a class="btn load-more">Load More</a>
+    <a class="btn see-less" style="display: none;">See Less</a>
+  </div>
+</section>
+<!-- destinations section end -->
+
+<!-- service section start -->
+<section class="services" id="services">
+  <h1 class="heading">
+      <span>s</span>
+      <span>e</span>
+      <span>r</span>
+      <span>v</span>
+      <span>i</span>
+      <span>c</span>
+      <span>e</span>
+      <span>s</span>
+  </h1>
+
+  <div class="box-container">
+      <div class="box">
+          <i class="fas fa-hotel"></i>
+          <h3>Affordable Hotels</h3>
+          <p>Stay in comfort with our selection of affordable hotels, offering excellent amenities and services to make your stay memorable.</p>
+      </div>
+
+      <div class="box">
+          <i class="fas fa-utensils"></i>
+          <h3>Food and Drinks</h3>
+          <p>Indulge in a variety of local and international cuisines at our recommended restaurants and cafes, ensuring a delightful culinary experience.</p>
+      </div>
+
+      <div class="box">
+          <i class="fas fa-bullhorn"></i>
+          <h3>Safety Guide</h3>
+          <p>Travel with peace of mind using our comprehensive safety guide, providing essential tips and information for a secure journey.</p>
+      </div>
+
+      <div class="box">
+          <i class="fas fa-globe-asia"></i>
+          <h3>Around Uttarakhand</h3>
+          <p>Explore the diverse landscapes and cultures of Uttarakhand with our curated travel itineraries, covering must-visit destinations.</p>
+      </div>
+
+      <div class="box">
+          <i class="fas fa-plane"></i>
+          <h3>Fastest Way to Travel</h3>
+          <p>Experience the convenience of fast travel with our recommended flight options, ensuring you reach your destination quickly and comfortably.</p>
+      </div>
+
+      <div class="box">
+          <i class="fas fa-hiking"></i>
+          <h3>Adventures</h3>
+          <p>Embark on thrilling adventures with our range of activities, including trekking, paragliding, and wildlife exploration, for an unforgettable experience.</p>
+      </div>
+  </div>
+</section>
+<!-- service section end -->
+
+<br><br>
+<!-- gallery section start -->
+<section class="gallery" id="gallery">
+   <h1 class="heading">
+     <span>g</span>
+     <span>a</span>
+     <span>l</span>
+     <span>l</span>
+     <span>e</span>
+     <span>r</span>
+     <span>y</span>
+   </h1>
+<br>
+<br>
+   <div class="box-container">
+    
+   <div class="box">
+     <img src="./images/gallery/g-1.jpg" alt="image1">
+     <div class="content">
+       <a href="./Nainital.html"><h3>Nainital</h3></a>
+       <p>"Nainital is a picturesque hill station with beautiful lakes, scenic views, and pleasant weather year-round."</p>
+       <a href="#" class="btn">see more</a>
+      </div>
+   </div>
+       
+   <div class="box">
+    <img src="./images/gallery/g-2.jpg" alt="image2">
+    <div class="content">
+        <a href="./Valley_of_Flowers.html"><h3>Valley of Flowers</h3></a>
+        <p>"A UNESCO World Heritage site, known for its stunning alpine flowers and breathtaking natural beauty."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./images/gallery/g-3.jpg" alt="image3">
+    <div class="content">
+        <a href="./Rishikesh.html"><h3>Rishikesh</h3></a>
+        <p>"The Yoga Capital of the World, offering spiritual retreats, adventure sports, and serene Ganges views."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./images/gallery/g-9.jpg" alt="image4">
+    <div class="content">
+        <a href="./Kedarnath.html"><h3>Kedarnath</h3></a>
+        <p>"A sacred pilgrimage site, nestled in the Himalayas, known for its ancient temple and spiritual significance."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./images/gallery/g-6.jpg" alt="image5">
+    <div class="content">
+        <a href="./Badrinath.html"><h3>Badrinath</h3></a>
+        <p>"A revered pilgrimage destination, offering spiritual solace and stunning Himalayan vistas."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./Uttarakhand/Dehradun/Nearby Attractions/3. Haridwar/About+Images/Images/haridwar 2.jpg" alt="image6">
+    <div class="content">
+        <a href="./Haridwar.html"><h3>Haridwar</h3></a>
+        <p>"A spiritual hub on the banks of the Ganges, famous for its vibrant rituals and holy ghats."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./images/gallery/g-8.jpg" alt="image7">
+    <div class="content">
+        <a href="./Gangotri.html"><h3>Gangotri</h3></a>
+        <p>"A sacred town in the Himalayas, known as the source of the Ganges River, attracting spiritual pilgrims."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./Uttarakhand/Jim Corbett/About+Images/Images/jim corbett national park.cms" alt="image8">
+    <div class="content">
+        <a href="./Jim_Corbett.html"><h3>Jim Corbett</h3></a>
+        <p>"India's oldest national park, renowned for its diverse wildlife, especially tigers, and beautiful landscapes."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./Uttarakhand/Dehradun/Nearby Attractions/4. Rajaji National Park/About+Images/Images/buffalo.jpg" alt="image9">
+    <div class="content">
+        <a href="./Rajaji_National_Park.html"><h3>Rajaji National Park</h3></a>
+        <p>"A wildlife sanctuary in Uttarakhand, home to elephants, tigers, and diverse flora and fauna."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./Uttarakhand/Tehri dam/Images+About/images/Tehri_Dam_India.jpg" alt="image10">
+    <div class="content">
+        <a href="./Tehri_Dam.html"><h3>Tehri Dam</h3></a>
+        <p>"One of the tallest dams in the world, offering stunning views and adventure activities like boating."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./Uttarakhand/Dehradun/Nearby Attractions/1. Mussoorie/About+Images/1Mussoorie.jpg" alt="image11">
+    <div class="content">
+        <a href="./Mussoorie.html"><h3>Mussoorie</h3></a>
+        <p>"A picturesque hill station, known for its colonial charm, stunning views, and serene walks."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+<div class="box">
+    <img src="./images/gallery/g-12.jpg" alt="image12">
+    <div class="content">
+        <a href="./Auli.html"><h3>Auli</h3></a>
+        <p>"A popular skiing destination, offering pristine slopes, stunning views, and serene tranquility."</p>
+        <a href="#" class="btn">see more</a>
+    </div>
+</div>
+
+   <div class="load-more">
+     <a class="btn load-more">Load More</a>
+     <a  class="btn see-less" style="display: none;">See Less</a>
+ </div>
+
+ </div>
+</section>
+<!-- gallery section end -->
+
+<!-- About us section starts -->
+
+<section class="About-us">
+
+  <div class="responsive-container-block bigContainer">
+    <div class="responsive-container-block Container">
+      <div class="responsive-container-block leftSide">
+        <p class="text-blk heading">
+          Meet Our Creative Team
+        </p>
+        <p class="text-blk subHeading">
+          Welcome to Global Footprint! We're passionate about crafting bespoke travel experiences that blend luxury, adventure, and cultural richness. Founded in [Year], we've grown from a small team into a globally recognized brand known for excellence. Join us to explore the world's wonders with unparalleled service and unforgettable journeys. Let's create lasting memories together! 🌍✈️✨
+        </p>
+      </div>
+      <div class="responsive-container-block rightSide">
+        <img class="number1img" src="./images/pic-11.jpg">
+        <img class="number2img" src="./images/pic-13.jpg">
+        <!-- <img class="number3img" src="./images/pack-3.jpg"> -->
+        <!-- <img class="number5img" src="./images/pack-5.jpg"> -->
+        <iframe allowfullscreen="allowfullscreen" class="number4vid" src="./images/vid-1.mp4"  loop autoplay muted>
+        </iframe>
+        <!-- poster="https://workik-widget-assets.s3.amazonaws.com/widget-assets/images/b242.png -->
+        <img class="number7img" src="./images/pic-14.jpg">
+        <img class="number6img" src="./images/pic-7.jpg">
+      </div>
+    </div>
+  </div>
+
+</section>
+
+<!-- About us section ends -->
+
+<!-- review section start -->
+<section class="review" id="review">
+ 
+ <h1 class="heading">
+   <span>r</span>
+   <span>e</span>
+   <span>v</span>
+   <span>i</span>
+   <span>e</span>
+   <span>w</span>
+ </h1>
+ <br>
+ <br>
+ <div class="swiper review-slider">
+     
+   <div class="swiper-wrapper">
+      
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-1.png" alt="review-images">
+          <h3>Rohit Maddhesiya</h3>
+          <p>Global Footprint provided an unforgettable travel experience. The itinerary was well-planned, and the accommodations were top-notch. Highly recommended!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-2.jpg" alt="review-images">
+          <h3>Adarsh Singh</h3>
+          <p>Our family trip was amazing thanks to Global Footprint. The guides were knowledgeable, and the activities were fun for all ages. Will book again!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-3.jpg" alt="review-images">
+          <h3>Abhay Barnwal</h3>
+          <p>Excellent service and attention to detail. The travel arrangements were seamless, and the destinations were breathtaking. Thank you, Global Footprint!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-4.jpg" alt="review-images"> <br>
+          <h3>Rider Bhaiya</h3>
+          <p>From start to finish, our trip was perfect. The team at Global Footprint took care of everything, allowing us to relax and enjoy our vacation.</p>
+         <br><div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-5.jpg" alt="review-images">
+          <h3>shubham kumar</h3>
+          <p>Global Footprint exceeded our expectations. The destinations were stunning, and the travel arrangements were flawless. We had a fantastic time!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-6.jpg" alt="review-images">
+          <h3>Abu obaida</h3>
+          <p>Global Footprint exceeded our expectations. The destinations were stunning, and the travel arrangements were flawless. We had a fantastic time!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-7.jpg" alt="review-images">
+          <h3>Adnan Mohd.</h3>
+          <p>Our honeymoon was magical thanks to Global Footprint. The romantic destinations and special arrangements made our trip unforgettable. Highly recommend!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-8.jpg" alt="review-images">
+          <h3>Ahtshaam Ansari</h3>
+          <p>Global Footprint's attention to detail and personalized service made our vacation stress-free and enjoyable. We will definitely travel with them again!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-10.jpg" alt="review-images">
+          <h3>Pradeep Singh</h3>
+          <p>Our adventure trip was thrilling and well-organized. The guides were professional, and the activities were exciting. Thank you, Global Footprint!</p>
+        <div class="stars">
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     </div>
+     <div class="swiper-slide">
+       <div class="box">
+         <img src="./images/pic-12.jpg" alt="review-images">
+          <h3>Vivek Gupta</h3>
+          <p>Global Footprint made our family vacation memorable. The kids loved the activities, and we appreciated the seamless travel arrangements. Highly recommend!</p>
+         <div class="stars">
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="fas fa-star"></i>
+           <i class="far fa-star"></i>
+         </div>
+       </div>
+     </div>
+     <div class="swiper-slide">
+      <div class="box">
+        <img src="./images/pic-14.jpg" alt="review-images">
+         <h3>Adarsh Rai</h3>
+         <p>fabulous destination suggestion and attention to detail. The travel arrangements were seamless, and the destinations were breathtaking. Thank you, Global Footprint!</p>
+        <div class="stars">
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="fas fa-star"></i>
+          <i class="far fa-star"></i>
+        </div>
+      </div>
+    </div>
+
+   </div>
+ </div>  
+</section>
+<!-- review section end -->
+
+<br><br><br>
+<!-- contact section start -->
+<section class="contact" id="contact">
+  
+  <h1 class="heading">
+    <span>c</span>
+    <span>o</span>
+    <span>n</span>
+    <span>t</span>
+    <span>a</span>
+    <span>c</span>
+    <span>t</span>
+  </h1>
+ 
+  <br><br><br>
+
+  <div class="row">
+   <div class="image">
+     <img src="./images/contact-img.svg" alt="contact-image">
+   </div>
+   
+   <form id="contact-form">
+     <div class="inputBox">
+       <input type="text" name="name" placeholder="Name" required>
+       <input type="email" name="email" placeholder="Email" required>
+     </div>
+     <div class="inputBox">
+      <input type="number" name="phone" placeholder="Phone" required>
+       <input type="text" name="subject" placeholder="Subject" required>
+     </div>
+     <textarea name="message" placeholder="Message" rows="10" cols="30" required></textarea>
+     <input type="submit" class="btn" value="Send Message">
+   </form>
+ </div>
+ 
+ </section>
+ <!-- contact section end -->
+
+ <!-- brand section start
+
+<section class="brand">
+ <h1 class="heading">
+   <span>b</span>
+   <span>r</span>
+   <span>a</span>
+   <span>n</span>
+   <span>d</span>
+ </h1>
+ <div class="swiper brand-slider">
+   <div class="swiper-wrapper">
+     <div class="swiper-slide"><img src="./Love_HTML_CSS/music.png" alt=""><a>Lorem ipsum dolor sit amet.</a></div>
+     <div class="swiper-slide"><img src="./Love_HTML_CSS/music.png" alt=""><a>Lorem ipsum dolor sit amet.</a></div>
+     <div class="swiper-slide"><img src="./Love_HTML_CSS/music.png" alt=""><a>Lorem ipsum dolor sit amet.</a></div>
+     <div class="swiper-slide"><img src="./Love_HTML_CSS/music.png" alt=""><a>Lorem ipsum dolor sit amet.</a></div>
+     <div class="swiper-slide"><img src="./Love_HTML_CSS/music.png" alt=""><a>Lorem ipsum dolor sit amet.</a></div>
+     <div class="swiper-slide"><img src="./Love_HTML_CSS/music.png" alt=""><a>Lorem ipsum dolor sit amet.</a></div>
+   </div>
+ </div>  
+</section>
+
+brand section end -->
+
+
+<br><br>
+
+<!-- footer section start -->
+
+<section class="footer">
+  <div class="box-container">
+    
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#home"><i class="fas fa-angle-right"></i>home</a>
+      <a href="#services"><i class="fas fa-angle-right"></i>services</a>
+      <a href="#gallery"><i class="fas fa-angle-right"></i>gallery</a>
+      <a href="#destinations"><i class="fas fa-angle-right"></i>destinations</a>
+    </div>
+    <div class="box">
+      <h3>extra links</h3>
+      <a href="About.html"><i class="fas fa-angle-right"></i>about us</a>
+      <a href="#contact"><i class="fas fa-angle-right"></i>contact</a>
+      <a href="#review"><i class="fas fa-angle-right"></i>review</a>
+      <a href="#"><i class="fas fa-angle-right"></i>privacy policy</a>
+      <a href="#"><i class="fas fa-angle-right"></i>terms of use</a>
+    </div>
+    <div class="box">
+      <h3>follow us</h3>
+      <a href="https://www.linkedin.com/in/adarsh-singh-25a616303"><i class="fab fa-linkedin"></i> linkedin</a>
+      <a href="https://www.facebook.com/share/16Xs7g4UUW/"><i class="fab fa-facebook-f"></i> facebook</a>
+      <a href="https://www.instagram.com/darkcoder1705"><i class="fab fa-instagram"></i> instagram</a>
+      <a href="https://x.com/AdarshSingh1705"><i class="fab fa-twitter"></i> x</a>
+    </div>
+ 
+  </div>
+ 
+  <h1 class="credit">created by: <span>Adarsh Singh</span> | all rights reserved</h1>
+ 
+ </section>
+ <!-- footer section end -->
+ 
+     <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+     <script src="./scripts.js"></script>
+ 
+     <script>
+         // Show the login form when login button is clicked
+         document.getElementById('login-btn').addEventListener('click', () => {
+             document.getElementById('login-container').style.display = 'flex';
+         });
+ 
+         // Close the login form
+         document.getElementById('form-close').addEventListener('click', () => {
+             document.getElementById('login-container').style.display = 'none';
+         });
+ 
+         // Show the signup form when "Register now" is clicked in the login form
+         document.getElementById('show-signup').addEventListener('click', () => {
+             document.getElementById('login-container').style.display = 'none';
+             document.getElementById('signup-container').style.display = 'flex';
+         });
+ 
+         // Show the login form when clicking "Login here" in the signup form
+         document.getElementById('show-login').addEventListener('click', () => {
+             document.getElementById('signup-container').style.display = 'none';
+             document.getElementById('login-container').style.display = 'flex';
+         });
+ 
+         // Handle login form submission
+         document.getElementById('login-form').addEventListener('submit', async (e) => {
+     e.preventDefault();
+     const email = document.getElementById('email').value;
+     const password = document.getElementById('password').value;
+     const messageElement = document.getElementById('login-message');
+ 
+     try {
+         const response = await fetch('/login', {
+             method: 'POST',
+             headers: { 'Content-Type': 'application/json' },
+             body: JSON.stringify({ email, password })
+         });
+ 
+         const data = await response.json();
+ 
+         if (response.ok) {
+             messageElement.style.color = 'green';
+             messageElement.textContent = 'Login successful!';
+ 
+             // Show the user's name in the navbar and display the user info tab
+             document.getElementById('user-name').textContent = data.user.name; // Assuming `name` is sent in the response
+             document.getElementById('user-info').style.display = 'inline'; // Show the user info tab
+         } else {
+             messageElement.style.color = 'red';
+             messageElement.textContent = data.message || 'Invalid credentials';
+         }
+     } catch (err) {
+         messageElement.style.color = 'red';
+         messageElement.textContent = 'Server error, please try again later.';
+     }
+ });
+  // Handle signup form submission (Same as before)
+         document.getElementById('signup-form').addEventListener('submit', async (e) => {
+             e.preventDefault();
+             const name = document.getElementById('signup-name').value;
+             const email = document.getElementById('signup-email').value;
+             const password = document.getElementById('signup-password').value;
+             const confirmPassword = document.getElementById('confirm-password').value;
+             const messageElement = document.getElementById('signup-message');
+ 
+             if (password !== confirmPassword) {
+                 messageElement.style.color = 'red';
+                 messageElement.textContent = 'Passwords do not match';
+                 return;
+             }
+ 
+             try {
+                 const response = await fetch('/signup', {
+                     method: 'POST',
+                     headers: { 'Content-Type': 'application/json' },
+                     body: JSON.stringify({ name, email, password })
+                 });
+ 
+                 const data = await response.json();
+                 if (response.ok) {
+                     messageElement.style.color = 'green';
+                     messageElement.textContent = 'Signup successful!';
+ 
+                     // You can also show the name after signup or just wait for login
+                 } else {
+                     messageElement.style.color = 'red';
+                     messageElement.textContent = data.message || 'Error during signup';
+                 }
+             } catch (err) {
+                 messageElement.style.color = 'red';
+                 messageElement.textContent = 'Server error, please try again later.';
+             }
+         });
+ // connection to the server for the contect form
+   document.getElementById('contact-form').addEventListener('submit', async function(event) {
+     event.preventDefault();
+ 
+     const formData = new FormData(this);
+     const data = {
+       name: formData.get('name'),
+       email: formData.get('email'),
+       subject: formData.get('subject'),
+       message: formData.get('message')
+     };
+ 
+     try {
+       const response = await fetch('http://localhost:3000/send-email', {
+         method: 'POST',
+         headers: {
+           'Content-Type': 'application/json'
+         },
+         body: JSON.stringify(data)
+       });
+ 
+       if (response.ok) {
+         alert('Email sent successfully!');
+       } else {
+         alert('Failed to send email.');
+       }
+     } catch (error) {
+       alert('Error: ' + error.message);
+     }
+   });
+ 
+   // connection to the server for the review form
+     </script>
+ </body>
+ </html>
