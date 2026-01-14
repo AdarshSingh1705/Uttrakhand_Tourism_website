@@ -551,16 +551,21 @@ body.dark-mode .newsletter input[type="email"]:focus {
 
 /* Footer */
 body.dark-mode .footer {
-    background: linear-gradient(rgba(30, 30, 30, 0.9), rgba(30, 30, 30, 0.9)), var(--bg-image);
+    background: linear-gradient(rgba(30, 30, 30, 0.95), rgba(30, 30, 30, 0.95)), var(--bg-image);
     border-top: 1px solid var(--dark-border-primary);
 }
 
-body.dark-mode .footer .box-container .box {
+/* body.dark-mode .footer .box-container .box {
     color: var(--dark-text-secondary);
-}
+} */
 
 body.dark-mode .footer .box-container .box h3 {
     color: var(--dark-accent);
+    text-shadow: none;
+}
+
+body.dark-mode .footer .box-container .box p {
+    color: var(--dark-text-secondary);
 }
 
 body.dark-mode .footer .box-container .box a {
@@ -569,6 +574,14 @@ body.dark-mode .footer .box-container .box a {
 }
 
 body.dark-mode .footer .box-container .box a:hover {
+    color: var(--dark-accent);
+}
+
+body.dark-mode .footer .box-container .box a i {
+    color: var(--dark-text-muted);
+}
+
+body.dark-mode .footer .box-container .box a i:hover {
     color: var(--dark-accent);
 }
 
