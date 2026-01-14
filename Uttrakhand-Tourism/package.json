@@ -1,18 +1,25 @@
 {
-  "name": "global-footprint-react",
-  "version": "1.0.0",
-  "description": "Global FootPrint Tourism Website - React Version",
-  "scripts": {
-    "client": "cd client && npm start",
-    "server": "cd backend && npm start",
-    "install-all": "cd backend && npm install && cd ../client && npm install",
-    "build": "cd client && npm run build"
-  },
-  "keywords": ["tourism", "uttarakhand", "react", "nodejs", "travel", "himalayas"],
-  "author": "Adarsh Singh",
-  "license": "MIT",
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/AdarshSingh1705/Global-FootPrint"
-  }
+	"name": "global-footprint-react",
+	"version": "1.0.0",
+	"description": "Global FootPrint Tourism Website - React Version",
+	"scripts": {
+		"client": "cd client && npm start",
+		"server": "cd backend && npm start",
+		"install-all": "cd backend && npm install && cd ../client && npm install",
+		"build": "cd client && npm run build"
+	},
+	"keywords": [
+		"tourism",
+		"uttarakhand",
+		"react",
+		"nodejs",
+		"travel",
+		"himalayas"
+	],
+	"author": "Adarsh Singh",
+	"license": "MIT",
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/AdarshSingh1705/Global-FootPrint"
+	}
 }

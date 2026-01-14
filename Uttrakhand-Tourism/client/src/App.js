@@ -1,6 +1,7 @@
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import { AuthProvider } from './context/AuthContext';
+import { ThemeProvider } from './context/ThemeContext';
 import Layout from './components/Layout/Layout';
 import ProtectedRoute from './components/ProtectedRoute';
 import Breadcrumb from './components/common/Breadcrumb';
@@ -37,15 +38,17 @@ import TehriDam from './pages/destinations/TehriDam';
 import Yamunotri from './pages/destinations/Yamunotri';
 import './styles/styles.css';
 import './styles/D-styles.css';
+import './styles/dark-mode.css';
 import './styles/responsive.css';
 
 function App() {
   return (
-    <AuthProvider>
-      <Router>
-      <Layout>
-        <Breadcrumb />
-        <Routes>
+    <ThemeProvider>
+      <AuthProvider>
+        <Router>
+        <Layout>
+          <Breadcrumb />
+          <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/contact" element={<Contact />} />
@@ -77,10 +80,11 @@ function App() {
           <Route path="/destinations/valley-of-flowers" element={<ValleyOfFlowers />} />
           <Route path="/destinations/yamunotri" element={<Yamunotri />} />
           <Route path="*" element={<NotFound />} />
-        </Routes>
-      </Layout>
-      </Router>
-    </AuthProvider>
+          </Routes>
+        </Layout>
+        </Router>
+      </AuthProvider>
+    </ThemeProvider>
   );
 }
 

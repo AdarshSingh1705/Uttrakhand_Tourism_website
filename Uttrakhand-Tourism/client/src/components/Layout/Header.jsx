@@ -2,13 +2,16 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import AuthModal from '../AuthModal';
 import SearchBar from '../common/SearchBar';
+import { useTheme } from '../../hooks/useTheme';
 import './Header.css';
+// import './Header.dark.css';
 
 const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
   const [signupOpen, setSignupOpen] = useState(false);
+  const { isDarkMode, toggleTheme } = useTheme();
 
   return (
     <header>
@@ -18,7 +21,7 @@ const Header = () => {
       <nav className={`navbar ${menuOpen ? 'active' : ''}`}>
         <Link to="/">Home</Link>
         
-        <div className="dropdown">
+        {/* <div className="dropdown">
           <button className="dropbtn"><Link to="/destinations">Destinations</Link></button>
           <div className="dropdown-content">
             <div className="dropdown-row">
@@ -37,10 +40,10 @@ const Header = () => {
               <Link to="/destinations/rajaji-national-park"><p>Rajaji N. P.</p></Link>
             </div>
           </div>
-        </div>
-
+        </div> */}
+        <Link to="/destinations">Destinations</Link>
         <Link to="/#services">Services</Link>
-        <Link to="/packages">Packages</Link>
+        {/* <Link to="/packages">Packages</Link> */}
         <Link to="/gallery">Gallery</Link>
         <Link to="/blog">Blog</Link>
         <Link to="/faq">FAQ</Link>
@@ -54,6 +57,7 @@ const Header = () => {
 
       <div className="icons">
         <i className="fas fa-search" id="search-btn" onClick={() => setSearchOpen(!searchOpen)}></i>
+        <i className={isDarkMode ? "fas fa-sun" : "fas fa-moon"} id="theme-btn" onClick={toggleTheme} title={isDarkMode ? "Light Mode" : "Dark Mode"}></i>
         <i className="fas fa-user" id="login-btn" onClick={() => setLoginOpen(true)}></i>
       </div>
 
