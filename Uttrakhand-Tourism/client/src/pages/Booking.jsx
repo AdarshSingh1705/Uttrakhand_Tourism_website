@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { useNavigate } from 'react-router-dom';
-import { validateEmail, validatePhone, validateName, validateDate, sanitizeInput } from '../utils/validation';
+import { validateEmail, validatePhone, validateName, validateDate } from '../utils/validation';
 import { rateLimit, getRemainingTime } from '../utils/rateLimiter';
 
 const Booking = () => {

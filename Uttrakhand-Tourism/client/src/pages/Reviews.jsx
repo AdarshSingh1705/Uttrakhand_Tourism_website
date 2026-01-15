@@ -3,15 +3,14 @@ import { Swiper, SwiperSlide } from 'swiper/react';
 import { Autoplay, Pagination } from 'swiper/modules';
 import 'swiper/css';
 import 'swiper/css/pagination';
-import { useApi } from '../hooks/useApi';
 import LoadingSpinner from '../components/common/LoadingSpinner';
 import ErrorMessage from '../components/common/ErrorMessage';
 import { validateEmail, validateName, sanitizeInput } from '../utils/validation';
 import { rateLimit, getRemainingTime } from '../utils/rateLimiter';
 
 const Reviews = () => {
-  const [reviews, setReviews] = useState([]);
-  const [loading, setLoading] = useState(false);
+  const [reviews] = useState([]);
+  const [loading] = useState(false);
   const [error, setError] = useState(null);
   const [formData, setFormData] = useState({ name: '', email: '', rating: 5, comment: '' });
   const [status, setStatus] = useState('');

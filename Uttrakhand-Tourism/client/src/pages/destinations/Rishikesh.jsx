@@ -128,7 +128,7 @@ const Rishikesh = () => {
   useEffect(() => {
     const interval = setInterval(next, 5000);
     return () => clearInterval(interval);
-  }, [index]);
+  }, [index, heroImages.length]);
 
   return (
     <main>

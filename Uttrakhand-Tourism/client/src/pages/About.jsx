@@ -29,7 +29,7 @@ const About = () => {
           <div className="responsive-container-block rightSide">
             <img className="number1img" src="/images/pic-11.jpg" alt="Team" />
             <img className="number2img" src="/images/pic-13.jpg" alt="Team" />
-            <iframe allowFullScreen className="number4vid" src="/images/vid-1.mp4" loop autoPlay muted></iframe>
+            <iframe allowFullScreen className="number4vid" src="/images/vid-1.mp4" title="About Us Video" loop autoPlay muted></iframe>
             <img className="number7img" src="/images/pic-2.jpg" alt="Team" />
             <img className="number6img" src="/images/pic-2.jpg" alt="Team" />
           </div>

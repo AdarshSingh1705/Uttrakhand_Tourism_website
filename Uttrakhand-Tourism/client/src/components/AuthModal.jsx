@@ -96,9 +96,9 @@ const AuthModal = ({ isOpen, onClose, type }) => {
         
         <p>
           {type === 'login' ? "Don't have an account? " : 'Already have an account? '}
-          <a href="#" onClick={(e) => { e.preventDefault(); onClose(); }}>
+          <button type="button" style={{ background: 'none', border: 'none', color: 'inherit', textDecoration: 'underline', cursor: 'pointer' }} onClick={(e) => { e.preventDefault(); onClose(); }}>
             {type === 'login' ? 'Register now' : 'Login here'}
-          </a>
+          </button>
         </p>
       </form>
     </div>

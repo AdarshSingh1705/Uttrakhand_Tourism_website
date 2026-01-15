@@ -5,8 +5,8 @@ const Dashboard = () => {
   const navigate = useNavigate();
   const [user, setUser] = useState(null);
   const [activeTab, setActiveTab] = useState('profile');
-  const [bookings, setBookings] = useState([]);
-  const [reviews, setReviews] = useState([]);
+  const [bookings] = useState([]);
+  const [reviews] = useState([]);
 
   useEffect(() => {
     const userData = localStorage.getItem('user');

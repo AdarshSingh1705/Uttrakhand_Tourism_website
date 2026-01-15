@@ -1,6 +1,5 @@
 import React, { useState, useMemo } from 'react';
 import { Link, useSearchParams } from 'react-router-dom';
-import useLoadMore from '../hooks/useLoadMore';
 
 const AllDestinations = () => {
   const [searchParams, setSearchParams] = useSearchParams();

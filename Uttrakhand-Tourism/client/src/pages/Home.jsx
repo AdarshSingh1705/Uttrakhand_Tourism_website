@@ -102,8 +102,8 @@ const Home = () => {
         </div>
 
         <div className="load-more">
-          <a className="btn load-more">Load More</a>
-          <a className="btn see-less" style={{ display: 'none' }}>See Less</a>
+          <button className="btn load-more">Load More</button>
+          <button className="btn see-less" style={{ display: 'none' }}>See Less</button>
         </div>
       </section>
 
@@ -162,15 +162,15 @@ const Home = () => {
               <div className="content">
                 <Link to={item.link}><h3>{item.name}</h3></Link>
                 <p>{item.description}</p>
-                <a href="#" className="btn">see more</a>
+                <Link to={item.link} className="btn">see more</Link>
               </div>
             </div>
           ))}
         </div>
 
         <div className="load-more">
-          <a className="btn load-more">Load More</a>
-          <a className="btn see-less" style={{ display: 'none' }}>See Less</a>
+          <button className="btn load-more">Load More</button>
+          <button className="btn see-less" style={{ display: 'none' }}>See Less</button>
         </div>
       </section>
 
@@ -187,7 +187,7 @@ const Home = () => {
             <div className="responsive-container-block rightSide">
               <img className="number1img" src="/images/pic-11.jpg" alt="Team" />
               <img className="number2img" src="/images/pic-13.jpg" alt="Team" />
-              <iframe allowFullScreen className="number4vid" src="/images/vid-1.mp4" loop autoPlay muted></iframe>
+              <iframe allowFullScreen className="number4vid" src="/images/vid-1.mp4" title="Team Video" loop autoPlay muted></iframe>
               <img className="number7img" src="/images/pic-14.jpg" alt="Team" />
               <img className="number6img" src="/images/pic-7.jpg" alt="Team" />
             </div>
