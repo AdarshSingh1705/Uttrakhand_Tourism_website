@@ -427,9 +427,9 @@ header .search-bar-container label:hover{
 .gallery .box-container .box{
     overflow: hidden;
     box-shadow: 0 1rem 2rem rgba(0, 0, 0, .1);
-    border: 1rem solid var(--white);
+    border: .5rem solid var(--white);
     flex: 1 1 30%;
-    border-radius: .2rem;
+    border-radius: 3rem .5rem;
     height: 28rem;
     position: relative;
 }
@@ -1008,7 +1008,7 @@ header .search-bar-container label:hover{
     margin-left: 8%;
     height: 28%;
     width: 22%;
-    border-radius: .2rem;
+    border-radius: 4rem .2rem;
     position: absolute;
   }
   
@@ -1017,9 +1017,9 @@ header .search-bar-container label:hover{
     margin-right: 62%;
     margin-bottom: 62%;
     margin-left: 27%;
-    width: 22%;
-    height: 32%;
-    border-radius: .2rem;
+    width: 25%;
+    height: 35%;
+    border-radius: 4rem .2rem;
     position: absolute;
   }
   
@@ -1049,7 +1049,7 @@ header .search-bar-container label:hover{
   .number5img {
     position: absolute;
     width: 13%;
-    height: 21%;
+    height: 15%;
     margin-top: 38%;
     margin-right: 27%;
     margin-bottom: 41%;
@@ -1063,9 +1063,9 @@ header .search-bar-container label:hover{
     margin-right: 13%;
     margin-bottom: 65%;
     margin-left: 46%;
-    width: 20%;
+    width: 23%;
     height: 24%;
-    border-radius: .2rem;
+    border-radius: 4rem .2rem;
   }
   
   .number7img {
@@ -1075,8 +1075,8 @@ header .search-bar-container label:hover{
     margin-bottom: 32%;
     margin-left: 65%;
     height: 30%;
-    width: 23%;
-    border-radius: .2rem;
+    width: 25%;
+    border-radius: 4rem .2rem;
   }
   
   .text-blk.subHeading {

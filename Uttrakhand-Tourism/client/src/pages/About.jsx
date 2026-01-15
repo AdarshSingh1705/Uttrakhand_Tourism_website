@@ -30,8 +30,8 @@ const About = () => {
             <img className="number1img" src="/images/pic-11.jpg" alt="Team" />
             <img className="number2img" src="/images/pic-13.jpg" alt="Team" />
             <iframe allowFullScreen className="number4vid" src="/images/vid-1.mp4" loop autoPlay muted></iframe>
-            <img className="number7img" src="/images/pic-14.jpg" alt="Team" />
-            <img className="number6img" src="/images/pic-7.jpg" alt="Team" />
+            <img className="number7img" src="/images/pic-2.jpg" alt="Team" />
+            <img className="number6img" src="/images/pic-2.jpg" alt="Team" />
           </div>
         </div>
       </div>
@@ -39,7 +39,7 @@ const About = () => {
       <br /><br />
 
       <div className="responsive-container-block bigContainer">
-        <h1 className="heading" style={{ textAlign: 'center' }}>
+        <h1 className="heading" style={{ textAlign: 'center', width: '100%' }}>
           <span>O</span><span>u</span><span>r</span> <span>V</span><span>a</span><span>l</span><span>u</span><span>e</span><span>s</span>
         </h1>
         <br />

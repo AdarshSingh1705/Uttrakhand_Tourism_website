@@ -107,33 +107,6 @@ body.dark-mode .search-bar-container label:hover {
     color: var(--dark-accent);
 }
 
-/* Dropdown Menu */
-body.dark-mode .dropdown-content {
-    background: var(--dark-bg-secondary);
-    border: 1px solid var(--dark-border-primary);
-    border-radius: 8px;
-    box-shadow: 0 8px 25px var(--dark-shadow);
-}
-
-body.dark-mode .dropdown-content a {
-    color: var(--dark-text-secondary);
-    border: 1px solid var(--dark-border-primary);
-    transition: all 0.2s ease;
-}
-
-body.dark-mode .dropdown-content a:hover {
-    background: var(--dark-bg-tertiary);
-    color: var(--dark-accent);
-    border-color: var(--dark-accent);
-}
-
-body.dark-mode .dropdown-content a p {
-    color: var(--dark-text-secondary);
-}
-
-body.dark-mode .dropdown-content a:hover p {
-    color: var(--dark-accent);
-}
 
 /* Cards and Containers */
 body.dark-mode .card,
