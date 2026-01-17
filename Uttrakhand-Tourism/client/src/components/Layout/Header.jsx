@@ -9,7 +9,6 @@ const Header = () => {
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
-  const [signupOpen, setSignupOpen] = useState(false);
 
   return (
     <header>
@@ -21,9 +20,7 @@ const Header = () => {
         
         <Link to="/destinations">Destinations</Link>
         <Link to="/#services">Services</Link>
-        {/* <Link to="/packages">Packages</Link> */}
         <Link to="/gallery">Gallery</Link>
-        <Link to="/blog">Blog</Link>
         <Link to="/reviews">Review</Link>
         <Link to="/contact">Contact</Link>
         <li id="user-info" style={{display: 'none'}}>
@@ -38,8 +35,7 @@ const Header = () => {
 
       <SearchBar isOpen={searchOpen} onClose={() => setSearchOpen(false)} />
 
-      <AuthModal isOpen={loginOpen} onClose={() => setLoginOpen(false)} type="login" />
-      <AuthModal isOpen={signupOpen} onClose={() => setSignupOpen(false)} type="signup" />
+      <AuthModal isOpen={loginOpen} onClose={() => setLoginOpen(false)} />
     </header>
   );
 };

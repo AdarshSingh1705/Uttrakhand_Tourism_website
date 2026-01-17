@@ -621,10 +621,9 @@ header .search-bar-container label:hover{
 
 /* footer section start */
 .footer{
-  background: url(../../public/images/gallery/g-4.jpg) repeat;
+  background: #333;
   background-size: cover;
   background-position: center;
-  background-attachment: fixed;
 } 
 
 .footer .box-container{

@@ -1,106 +1,135 @@
 import React, { useState } from 'react';
 import { authService } from '../services/authService';
+import './AuthModal.css';
 
-const AuthModal = ({ isOpen, onClose, type }) => {
-  const [formData, setFormData] = useState({
-    name: '',
-    email: '',
-    password: '',
-    confirmPassword: ''
-  });
+const AuthModal = ({ isOpen, onClose }) => {
+  const [isActive, setIsActive] = useState(false);
+  const [loginData, setLoginData] = useState({ email: '', password: '' });
+  const [signupData, setSignupData] = useState({ name: '', email: '', password: '', confirmPassword: '' });
   const [message, setMessage] = useState('');
 
-  const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+  const handleLoginChange = (e) => {
+    setLoginData({ ...loginData, [e.target.name]: e.target.value });
   };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
-    
-    if (type === 'signup' && formData.password !== formData.confirmPassword) {
-      setMessage('Passwords do not match');
-      return;
-    }
+  const handleSignupChange = (e) => {
+    setSignupData({ ...signupData, [e.target.name]: e.target.value });
+  };
 
+  const handleLoginSubmit = async (e) => {
+    e.preventDefault();
     try {
-      if (type === 'login') {
-        await authService.login({ email: formData.email, password: formData.password });
-      } else {
-        await authService.signup({ name: formData.name, email: formData.email, password: formData.password });
-      }
-      setMessage(`${type} successful!`);
+      await authService.login(loginData);
+      setMessage('Login successful!');
       setTimeout(() => {
         onClose();
-        setFormData({ name: '', email: '', password: '', confirmPassword: '' });
+        setLoginData({ email: '', password: '' });
         setMessage('');
       }, 2000);
     } catch (error) {
-      setMessage(error.response?.data?.message || 'Server error, please try again later.');
+      setMessage(error.response?.data?.message || 'Login failed');
+    }
+  };
+
+  const handleSignupSubmit = async (e) => {
+    e.preventDefault();
+    if (signupData.password !== signupData.confirmPassword) {
+      setMessage('Passwords do not match');
+      return;
+    }
+    try {
+      await authService.signup({ name: signupData.name, email: signupData.email, password: signupData.password });
+      setMessage('Registration successful!');
+      setTimeout(() => {
+        onClose();
+        setSignupData({ name: '', email: '', password: '', confirmPassword: '' });
+        setMessage('');
+      }, 2000);
+    } catch (error) {
+      setMessage(error.response?.data?.message || 'Registration failed');
     }
   };
 
   if (!isOpen) return null;
 
   return (
-    <div className="login-form-container active">
-      <i className="fas fa-times" id="form-close" onClick={onClose}></i>
-      <form onSubmit={handleSubmit}>
-        <h3>{type === 'login' ? 'Login' : 'Sign Up'}</h3>
-        {message && <p className="message" style={{ color: message.includes('successful') ? 'green' : 'red' }}>{message}</p>}
+    <div className="auth-modal-overlay" onClick={onClose}>
+      <div className={`auth-container ${isActive ? 'active' : ''}`} onClick={(e) => e.stopPropagation()}>
+        <i className="fas fa-times auth-close" onClick={onClose}></i>
         
-        {type === 'signup' && (
-          <input
-            type="text"
-            name="name"
-            className="box"
-            placeholder="Enter your name"
-            value={formData.name}
-            onChange={handleChange}
-            required
-          />
-        )}
-        
-        <input
-          type="email"
-          name="email"
-          className="box"
-          placeholder="Enter your email"
-          value={formData.email}
-          onChange={handleChange}
-          required
-        />
-        
-        <input
-          type="password"
-          name="password"
-          className="box"
-          placeholder="Enter your password"
-          value={formData.password}
-          onChange={handleChange}
-          required
-        />
-        
-        {type === 'signup' && (
-          <input
-            type="password"
-            name="confirmPassword"
-            className="box"
-            placeholder="Confirm your password"
-            value={formData.confirmPassword}
-            onChange={handleChange}
-            required
-          />
-        )}
-        
-        <input type="submit" value={type === 'login' ? 'Login Now' : 'Sign Up Now'} className="btn" />
-        
-        <p>
-          {type === 'login' ? "Don't have an account? " : 'Already have an account? '}
-          <button type="button" style={{ background: 'none', border: 'none', color: 'inherit', textDecoration: 'underline', cursor: 'pointer' }} onClick={(e) => { e.preventDefault(); onClose(); }}>
-            {type === 'login' ? 'Register now' : 'Login here'}
-          </button>
-        </p>
-      </form>
+        {/* Login Form */}
+        <div className="form-box login">
+          <form onSubmit={handleLoginSubmit}>
+            <h1>Login</h1>
+            {message && <p className="auth-message" style={{ color: message.includes('successful') ? '#4ec9b0' : '#f44747' }}>{message}</p>}
+            <div className="input-box">
+              <input type="email" name="email" placeholder="Email" value={loginData.email} onChange={handleLoginChange} required />
+              <i className='bx bxs-envelope'></i>
+            </div>
+            <div className="input-box">
+              <input type="password" name="password" placeholder="Password" value={loginData.password} onChange={handleLoginChange} required />
+              <i className='bx bxs-lock-alt'></i>
+            </div>
+            <div className="forgot-link">
+              <a href="#">Forgot Password?</a>
+            </div>
+            <button type="submit" className="btn">Login</button>
+            <p>or login with social platforms</p>
+            <div className="social-icons">
+              <a href="#"><i className='bx bxl-google'></i></a>
+              <a href="#"><i className='bx bxl-facebook'></i></a>
+              <a href="#"><i className='bx bxl-github'></i></a>
+              <a href="#"><i className='bx bxl-linkedin'></i></a>
+            </div>
+          </form>
+        </div>
+
+        {/* Register Form */}
+        <div className="form-box register">
+          <form onSubmit={handleSignupSubmit}>
+            <h1>Registration</h1>
+            {message && <p className="auth-message" style={{ color: message.includes('successful') ? '#4ec9b0' : '#f44747' }}>{message}</p>}
+            <div className="input-box">
+              <input type="text" name="name" placeholder="Username" value={signupData.name} onChange={handleSignupChange} required />
+              <i className='bx bxs-user'></i>
+            </div>
+            <div className="input-box">
+              <input type="email" name="email" placeholder="Email" value={signupData.email} onChange={handleSignupChange} required />
+              <i className='bx bxs-envelope'></i>
+            </div>
+            <div className="input-box">
+              <input type="password" name="password" placeholder="Password" value={signupData.password} onChange={handleSignupChange} required />
+              <i className='bx bxs-lock-alt'></i>
+            </div>
+            <div className="input-box">
+              <input type="password" name="confirmPassword" placeholder="Confirm Password" value={signupData.confirmPassword} onChange={handleSignupChange} required />
+              <i className='bx bxs-lock-alt'></i>
+            </div>
+            <button type="submit" className="btn">Register</button>
+            <p>or register with social platforms</p>
+            <div className="social-icons">
+              <a href="#"><i className='bx bxl-google'></i></a>
+              <a href="#"><i className='bx bxl-facebook'></i></a>
+              <a href="#"><i className='bx bxl-github'></i></a>
+              <a href="#"><i className='bx bxl-linkedin'></i></a>
+            </div>
+          </form>
+        </div>
+
+        {/* Toggle Box */}
+        <div className="toggle-box">
+          <div className="toggle-panel toggle-left">
+            <h1>Hello, Welcome!</h1>
+            <p>Don't have an account?</p>
+            <button className="btn register-btn" onClick={() => setIsActive(true)}>Register</button>
+          </div>
+          <div className="toggle-panel toggle-right">
+            <h1>Welcome Back!</h1>
+            <p>Already have an account?</p>
+            <button className="btn login-btn" onClick={() => setIsActive(false)}>Login</button>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

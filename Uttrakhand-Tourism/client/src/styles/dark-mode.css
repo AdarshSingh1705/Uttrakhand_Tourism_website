@@ -381,27 +381,6 @@ body.dark-mode table tr:hover {
     background: var(--dark-bg-tertiary);
 }
 
-/* Dropdown Menu */
-body.dark-mode .dropdown-content {
-    background: var(--dark-bg-secondary);
-    border: 1px solid var(--dark-border-primary);
-    border-radius: 8px;
-    box-shadow: 0 8px 25px var(--dark-shadow);
-    backdrop-filter: blur(10px);
-}
-
-body.dark-mode .dropdown-content a {
-    color: var(--dark-text-secondary);
-    border: 1px solid var(--dark-border-primary);
-    transition: all 0.2s ease;
-}
-
-body.dark-mode .dropdown-content a:hover {
-    background: var(--dark-bg-tertiary);
-    color: var(--dark-accent);
-    border-color: var(--dark-accent);
-}
-
 /* Load More Buttons */
 body.dark-mode .load-more .btn {
     background: var(--dark-bg-tertiary);
@@ -524,43 +503,18 @@ body.dark-mode .newsletter input[type="email"]:focus {
 
 /* Footer */
 body.dark-mode .footer {
-    background: linear-gradient(rgba(30, 30, 30, 0.95), rgba(30, 30, 30, 0.95)), var(--bg-image);
+    background: #161616;
     border-top: 1px solid var(--dark-border-primary);
 }
 
-/* body.dark-mode .footer .box-container .box {
-    color: var(--dark-text-secondary);
-} */
-
-body.dark-mode .footer .box-container .box h3 {
-    color: var(--dark-accent);
-    text-shadow: none;
+body.dark-mode .footer .box-container .box {
+    background-color: #161616;
+    padding-left: 2rem;
+    border-color: #161616;
 }
 
-body.dark-mode .footer .box-container .box p {
-    color: var(--dark-text-secondary);
-}
-
-body.dark-mode .footer .box-container .box a {
-    color: var(--dark-text-secondary);
-    transition: color 0.2s ease;
-}
-
-body.dark-mode .footer .box-container .box a:hover {
-    color: var(--dark-accent);
-}
-
-body.dark-mode .footer .box-container .box a i {
-    color: var(--dark-text-muted);
-}
-
-body.dark-mode .footer .box-container .box a i:hover {
-    color: var(--dark-accent);
-}
-
-body.dark-mode .footer .credit {
-    color: var(--dark-text-secondary);
-    border-top: 1px solid var(--dark-border-primary);
+body.dark-mode .footer .box-container .box:hover{
+border-color: var(--dark-accent-hover);
 }
 
 body.dark-mode .footer .credit span {

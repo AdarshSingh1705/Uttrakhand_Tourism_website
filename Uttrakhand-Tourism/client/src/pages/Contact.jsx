@@ -77,13 +77,13 @@ const Contact = () => {
         <div className="info-box" style={{ flex: '1 1 30rem', textAlign: 'center', padding: '2rem', background: '#f9f9f9', borderRadius: '1rem' }}>
           <i className="fas fa-map-marker-alt" style={{ fontSize: '4rem', color: 'var(--orange)', marginBottom: '1rem' }}></i>
           <h3 style={{ fontSize: '2rem', color: '#333', margin: '1rem 0' }}>Address</h3>
-          <p style={{ fontSize: '1.5rem', color: '#666' }}>Dehradun, Uttarakhand, India</p>
+          <p style={{ fontSize: '1.5rem', color: '#666' }}>Deoria, Uttra Pradesh, India, 274202</p>
         </div>
 
         <div className="info-box" style={{ flex: '1 1 30rem', textAlign: 'center', padding: '2rem', background: '#f9f9f9', borderRadius: '1rem' }}>
           <i className="fas fa-envelope" style={{ fontSize: '4rem', color: 'var(--orange)', marginBottom: '1rem' }}></i>
           <h3 style={{ fontSize: '2rem', color: '#333', margin: '1rem 0' }}>Email</h3>
-          <p style={{ fontSize: '1.5rem', color: '#666' }}>as.adarshsingh13@gmail.com</p>
+          <p style={{ fontSize: '1.5rem', color: '#666' }}>gfp.globalfootprint2024@gmail.com</p>
         </div>
 
         <div className="info-box" style={{ flex: '1 1 30rem', textAlign: 'center', padding: '2rem', background: '#f9f9f9', borderRadius: '1rem' }}>
