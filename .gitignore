@@ -1,7 +1,6 @@
 # Dependencies
 node_modules/
-React-Version/client/node_modules/
-React-Version/server/node_modules/
+**/node_modules/
 
 # Environment variables
 .env
@@ -9,16 +8,22 @@ React-Version/server/node_modules/
 .env.development.local
 .env.test.local
 .env.production.local
+**/.env
+**/.env.local
 
 # Build outputs
-React-Version/client/build/
-React-Version/server/dist/
+build/
+dist/
+**/build/
+**/dist/
 
 # Logs
 *.log
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+lerna-debug.log*
+.pnpm-debug.log*
 
 # OS files
 .DS_Store
@@ -31,11 +36,21 @@ Desktop.ini
 *.swp
 *.swo
 *~
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # Temporary files
 *.tmp
 *.temp
 
+# Testing
+coverage/
+
 # Optional
-package-lock.json
-yarn.lock
+.npm
+.eslintcache
+.node_repl_history
+.vercel
