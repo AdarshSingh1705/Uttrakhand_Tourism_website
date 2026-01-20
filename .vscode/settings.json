@@ -1,0 +1,147 @@
+{
+    "git.ignoreLimitWarning": true,
+    "postman.settings.dotenv-detection-notification-visibility": false
+}
+//  BASIC LEVEL SETTING
+
+// {
+//     "workbench.colorTheme": "Default Dark+", // Change the theme to your liking
+//     "editor.fontSize": 14, // Sets the font size
+//     "editor.tabSize": 2, // Sets the tab size to 2 spaces
+//     "editor.insertSpaces": true, // Converts tabs to spaces
+//     "editor.wordWrap": "on", // Enables word wrap
+//     "files.autoSave": "onFocusChange", // Automatically saves files when you switch focus
+//     "files.trimTrailingWhitespace": true, // Removes trailing whitespace on save
+//     "explorer.confirmDragAndDrop": false, // Disables drag and drop confirmation in the explorer
+//     "editor.minimap.enabled": false, // Disables the minimap
+//     "editor.formatOnSave": true, // Formats code when you save the file
+//     "terminal.integrated.fontFamily": "monospace", // Sets the terminal font family
+//     "json.schemas": [], // Add JSON schemas for validation
+//     "eslint.enable": true, // Enables ESLint
+//     "prettier.requireConfig": true // Requires a Prettier config to format files
+// }
+
+
+
+
+// MEDIUM LEVEL SETTING
+
+// {
+//     "workbench.colorTheme": "Default Dark+", // Change theme to your liking
+//     "editor.fontSize": 14, // Sets the font size
+//     "editor.tabSize": 2, // Sets tab size to 2 spaces
+//     "editor.insertSpaces": true, // Converts tabs to spaces
+//     "editor.wordWrap": "on", // Enables word wrap
+//     "files.autoSave": "onWindowChange", // Automatically saves files when you switch windows
+//     "files.trimTrailingWhitespace": true, // Removes trailing whitespace on save
+//     "explorer.confirmDragAndDrop": false, // Disables drag and drop confirmation in the explorer
+//     "editor.minimap.enabled": false, // Disables the minimap
+//     "editor.formatOnSave": true, // Formats code when you save the file
+//     "editor.codeActionsOnSave": {
+//         "source.organizeImports": true // Organizes imports on save
+//     },
+//     "terminal.integrated.fontFamily": "monospace", // Sets the terminal font family
+//     "terminal.integrated.fontSize": 14, // Sets the terminal font size
+//     "json.schemas": [], // Add JSON schemas for validation
+//     "eslint.enable": true, // Enables ESLint
+//     "prettier.requireConfig": true, // Requires a Prettier config to format files
+//     "git.confirmSync": false, // Disables confirmation dialog when syncing git
+//     "window.zoomLevel": 0, // Default zoom level for the editor
+//     "editor.suggestSelection": "first", // Always selects the first suggestion in IntelliSense
+//     "breadcrumbs.enabled": true, // Enables breadcrumbs for easy navigation
+//     "workbench.activityBar.visible": true, // Shows the activity bar on the side
+//     "editor.cursorBlinking": "smooth", // Smooth cursor animation
+//     "editor.cursorStyle": "line", // Sets the cursor style to line
+//     "editor.lineHeight": 22, // Sets the line height
+//     "editor.rulers": [80, 120], // Adds vertical rulers for code line length guidance
+//     "editor.renderWhitespace": "all", // Shows whitespace characters
+//     "workbench.editor.enablePreview": false // Opens files in a new tab rather than previewing
+// }
+
+
+
+// ADVANCED LEVEL SETTING
+
+
+// {
+//     // "workbench.colorTheme": "One Dark Pro",
+//     // "workbench.iconTheme": "vscode-icons",
+//     "editor.fontSize": 14,
+//     "editor.fontFamily": "'Nunito', 'Courier New', monospace",
+//     "editor.fontLigatures": true,
+//     "editor.tabSize": 2,
+//     "editor.insertSpaces": true,
+//     "editor.wordWrap": "on",
+//     "editor.minimap.enabled": false,
+//     "editor.formatOnSave": true,
+//     "editor.formatOnPaste": true,
+//     "editor.codeActionsOnSave": {
+//         // "source.fixAll.eslint": true,
+//         // "source.organizeImports": true
+//     },
+//     "files.autoSave": "onWindowChange",
+//     "files.trimTrailingWhitespace": true,
+//     "explorer.confirmDragAndDrop": false,
+//     "terminal.integrated.fontFamily": "'Nunito', 'Courier New', monospace",
+//     "terminal.integrated.fontSize": 14,
+//     "json.schemas": [],
+//     "eslint.enable": true,
+//     "prettier.requireConfig": true,
+//     "git.autofetch": true,
+//     "git.confirmSync": false,
+//     "window.zoomLevel": 0,
+//     "editor.suggestSelection": "first",
+//     "breadcrumbs.enabled": true,
+//     "editor.cursorBlinking": "smooth",
+//     "editor.cursorStyle": "line",
+//     "editor.lineHeight": 22,
+//     "editor.rulers": [80, 120],
+//     "editor.renderWhitespace": "all",
+//     "workbench.editor.enablePreview": false,
+//     "workbench.statusBar.visible": true,
+//     "python.pythonPath": "path/to/python",
+//     "python.linting.enabled": true,
+//     "python.linting.pylintEnabled": true,
+//     "python.linting.flake8Enabled": true,
+//     "python.formatting.provider": "black",
+//     "java.configuration.runtimes": [
+//         {
+//             "name": "JavaSE-11",
+//             "path": "/path/to/jdk-11",
+//             "default": true
+//         },
+//         // {
+//         //     "name": "JavaSE-8",
+//         //     "path": "/path/to/jdk-8"
+//         // }
+//     ],
+//     "typescript.updateImportsOnFileMove.enabled": "always",
+//     "yaml.schemas": {
+//         "https://json.schemastore.org/github-workflow.json": "file:///path/to/workflow/*.yml"
+//     },
+//     "cSpell.enabled": true,
+//     "cSpell.language": "en",
+//     "liveServer.settings.port": 5500,
+//     "todo-tree.general.tags": ["TODO", "FIXME", "BUG"],
+//     "remote.SSH.remotePlatform": {
+//         "host1": "linux",
+//         "host2": "windows"
+//     },
+//     "C_Cpp.default.configurationProvider": "ms-vscode.cmake-tools",
+//     // "C_Cpp.intelliSenseEngine": "Default",
+//     // "C_Cpp.autocomplete": "Default",
+//     // "C_Cpp.errorSquiggles": "Enabled",
+//     // "C_Cpp.formatting": "Default",
+//     "C_Cpp.clang_format_path": "path/to/clang-format",
+//     "C_Cpp.clang_format_style": "Google",
+//     "C_Cpp.loggingLevel": "Warning",
+//     "javascript.validate.enable": true, // Enables JavaScript validation
+//     "javascript.format.enable": true, // Enables JavaScript formatting
+//     // "javascript.implicitProjectConfig.checkJs": true, // Enables type checking for JavaScript files
+//     "javascript.suggest.autoImports": true, // Automatically suggest auto-imports
+//     "javascript.updateImportsOnFileMove.enabled": "always", // Automatically update imports when a file is moved or renamed
+//     "prettier.singleQuote": true, // Use single quotes in JavaScript
+//     "prettier.trailingComma": "es5", // Include trailing commas where valid in ES5 (objects, arrays, etc.)
+//     "prettier.jsxSingleQuote": true, // Use single quotes in JSX
+//     "prettier.semi": true // Print semicolons at the ends of statements
+// }
