@@ -49,6 +49,9 @@ Desktop.ini
 # Testing
 coverage/
 
+# Local backups
+old-html-backup/
+
 # Optional
 .npm
 .eslintcache
