@@ -36,6 +36,7 @@ import Sattal from './pages/destinations/Sattal';
 import ValleyOfFlowers from './pages/destinations/ValleyOfFlowers';
 import TehriDam from './pages/destinations/TehriDam';
 import Yamunotri from './pages/destinations/Yamunotri';
+import Chatbot from './components/Chatbot';
 import './styles/styles.css';
 import './styles/D-styles.css';
 import './styles/dark-mode.css';
@@ -81,6 +82,7 @@ function App() {
           <Route path="/destinations/yamunotri" element={<Yamunotri />} />
           <Route path="*" element={<NotFound />} />
           </Routes>
+          <Chatbot />
         </Layout>
         </Router>
       </AuthProvider>
