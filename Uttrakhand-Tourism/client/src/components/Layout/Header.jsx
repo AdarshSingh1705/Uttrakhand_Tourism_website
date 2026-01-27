@@ -1,14 +1,16 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
+import { useAuth } from '../../context/AuthContext';
 import AuthModal from '../AuthModal';
 import SearchBar from '../common/SearchBar';
 import './Header.css';
-// import './Header.dark.css';
 
 const Header = () => {
+  const { user } = useAuth();
   const [menuOpen, setMenuOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [loginOpen, setLoginOpen] = useState(false);
+  const token = typeof window !== 'undefined' ? localStorage.getItem('token') : null;
 
   return (
     <header>
@@ -23,6 +25,7 @@ const Header = () => {
         <Link to="/gallery">Gallery</Link>
         <Link to="/reviews">Review</Link>
         <Link to="/contact">Contact</Link>
+        {user && token && <Link to="/profile">Profile</Link>}
         <li id="user-info" style={{display: 'none'}}>
         <Link to="#" id="user-link" title="User Profile"><span id="user-name">User</span></Link>
         </li>

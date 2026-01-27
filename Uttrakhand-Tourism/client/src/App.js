@@ -36,6 +36,7 @@ import Sattal from './pages/destinations/Sattal';
 import ValleyOfFlowers from './pages/destinations/ValleyOfFlowers';
 import TehriDam from './pages/destinations/TehriDam';
 import Yamunotri from './pages/destinations/Yamunotri';
+import UserProfile from './pages/UserProfile';
 import Chatbot from './components/Chatbot';
 import './styles/styles.css';
 import './styles/D-styles.css';
@@ -61,6 +62,7 @@ function App() {
           <Route path="/booking" element={<ProtectedRoute><Booking /></ProtectedRoute>} />
           <Route path="/dashboard" element={<ProtectedRoute><Dashboard /></ProtectedRoute>} />
           <Route path="/favorites" element={<ProtectedRoute><Favorites /></ProtectedRoute>} />
+          <Route path="/profile" element={<ProtectedRoute><UserProfile /></ProtectedRoute>} />
           <Route path="/destinations" element={<AllDestinations />} />
           <Route path="/destinations/auli" element={<Auli />} />
           <Route path="/destinations/badrinath" element={<Badrinath />} />
